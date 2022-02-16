@@ -14,7 +14,7 @@
   1. [Introducción](#introducción)
 
 ## **Introducción**
-#### ¿Qué significa ser un profesional de JavaScript? 1/42 
+### **¿Qué significa ser un profesional de JavaScript? 1/42**
   1. Conocimiento del lenguaje
       
     - Fundamentos
@@ -33,9 +33,10 @@
   5. Herramientas
   6. Ética / Profesionalismo
      1. 
-  7. Experiencia
-  
-  
+  7. Experiencia  
+
+### **Inicio del proyecto 3/42**
+this Guardar una instancia
 
 
 ### Como funciona JS
