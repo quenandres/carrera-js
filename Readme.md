@@ -38,6 +38,15 @@
 ### **Inicio del proyecto 3/42**
 this Guardar una instancia
 
+### **Cómo llega un script al navegador 4/42**
+  - DOM: El dom es una representacion de un documento de HTML, representado en forma de arbol para el navegador.
+  - Script Embebido: Cuando el navegador lee el codigo y se encuentra con algun script, lo ejecuta y deja esperando los demas componentes del DOM
+  - Script externos(async): No detienen todo el procesamiento, esperan hasta el final para ejecutarse.
+  - Script defer: Difiere al final la ejecución del js, la peticion correra asincronamente asi que no dentendra procesos.
+
+  ``` <script async src = ""></script> ```
+  
+  ``` <script defer src = ""></script> ```
 
 ### Como funciona JS
 ### Fundamentos intermedios
