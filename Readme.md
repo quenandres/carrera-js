@@ -71,6 +71,9 @@ Es una forma de  crear variables privadas, que solo pueden ser cambiadas a trave
     console.log(counter.getCount());
 ```
 
+### **El primer plugin 7/42**
+
+
 ### Como funciona JS
 ### Fundamentos intermedios
 ### Fundamentos avanzados
