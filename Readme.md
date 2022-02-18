@@ -3,7 +3,7 @@
 | Curso | Porcentage |
 |----|----|
 | Github - Actions | 81.82% |
-| Js - Profesional | 0.00% |ñs
+| Js - Profesional | 11.90% |ñs
 | Asincronismo | 16.67% |
 | Intro React | 13.64% |
 | Go intermedio | 3.33% |
@@ -45,8 +45,31 @@ this Guardar una instancia
   - Script defer: Difiere al final la ejecución del js, la peticion correra asincronamente asi que no dentendra procesos.
 
   ``` <script async src = ""></script> ```
-  
+
   ``` <script defer src = ""></script> ```
+
+### **Scope 5/42**
+  - El scope o ambito representa el tiempo de vida de una variable.
+  - Let y const operan sobre el block scope, por lo que se define de que estas variables solo tendran vida en este bloque
+
+### **Closures 6/42**
+Es una forma de  crear variables privadas, que solo pueden ser cambiadas a travez de otras funciones propias.
+```
+    function makeCounter( n ) {
+        let count = n;
+        return {
+            increase: () => count = count + 1,
+            decrease: () => count = count - 1,
+            getCount: () => count,
+        }
+    }
+
+    let counter = makeCounter(7);
+    console.log(counter.getCount());
+    counter.decrease();
+    counter.decrease();
+    console.log(counter.getCount());
+```
 
 ### Como funciona JS
 ### Fundamentos intermedios
