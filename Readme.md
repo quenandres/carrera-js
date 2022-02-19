@@ -17,13 +17,13 @@
 ### **¿Qué significa ser un profesional de JavaScript? 1/42**
   1. Conocimiento del lenguaje
       
-    - Fundamentos
-    - No-Fundamentos
-      - Promesas, Getters, Setters, Generadores, Proxies
-    - Como funciona
-      - Javascript Engine
-      - Herencia Prototipal
-      - Event Loop
+       - Fundamentos
+       - No-Fundamentos
+         - Promesas, Getters, Setters, Generadores, Proxies
+       - Como funciona
+         - Javascript Engine
+         - Herencia Prototipal
+         - Event Loop
   2. Conocimientos de entorno de programación
   3. Mejores prácticas
     - No reinventar la rueda
@@ -72,6 +72,119 @@ Es una forma de  crear variables privadas, que solo pueden ser cambiadas a trave
 ```
 
 ### **El primer plugin 7/42**
+
+### **this 8/42**
+this se refiere a la instancia de la clase.
+Pero hay mas contextos 
+en JS no existen las clases, pero es util llamarle objeto al New
+Cuando asignamos los valores de this.name, estamos asignando a la instancia no sobre el objeto prototipal
+```
+        const accion = person.saludar;
+        accion();
+
+        // this en el contexto de una clase
+        function Person(name) {
+            // this = {}
+            this.name = name;
+        }
+
+        Person.prototype.saludar = function() {
+            console.log(`Me llamo ${this.name}`)
+        }
+
+        const angela = new Person('Angela');
+        angela.saludar();
+```
+#### This
+This siempre representa algo diferente dependiendo el contexto en el que se encuentre, ya sea función, objeto o clase.
+ - function: This dentro de una función intenta devolver el objeto, Como la function no es un objeto, se va a un nivel más arriba y encuentra al objeto window.
+  ``` 
+  function imprimeThis(){
+    console.log(this);
+  } 
+  imprimeThis();
+  // Window....
+  ```
+ - método: Si this esta dentro de una función, pero esta funcion pertenece a un objeto, su valor cambia. En este casi, this se refiere al objeto
+  ```
+  let perro = {
+    nombre: "Max",
+    saludar: function() {
+      return `Hola, me llamo ${this.nombre} Guau Guau`;
+    }
+  };
+
+  perro.saludar();
+  // "Hola, me llamo Max Guau Guau"
+  ```
+  - evento: En n evento, this representa el elemento HTML al se le está asignando dicho evento.
+  ```
+  <a href="#" id="boton">Yo soy un botón</a>  
+  ```
+  ```
+  const boton = document.getElementById("boton");
+  boton.addEventListener("click"), function() {
+    console.log(this.textContent);
+  });
+
+  //Yo soy un botón
+  ```
+  - constructor: En este caso, this se refiere al objeto instanciado.
+  ```
+  //ES6
+  class Persona{
+    constructor(nombre, edad){
+      this.nombre = nombre;
+      this.edad = edad;
+    }
+  }
+
+  let amigo   = new Persona("Mario", 50);
+  let hermana = new Persona("Claudia", 27);
+  let madre   = new Persona("María", 60);
+
+  // Persona {nombre: "Mario", 50}
+  // Persona {nombre: "Claudia", 27}
+  // Persona {nombre: "María", 60}
+  ```
+  - arrow functions: las arrow function tienen algo llamado lexical this, que le permite a this llegar a un nivel superior.
+  ```
+  class Persona{
+    constructor() {
+      this.edad = 0;
+    }
+
+    aumentarEdad() {
+      setInterval(function(){
+        this.edad++;
+        console.log(this.edad);
+      }, 1000)
+    }
+  }
+
+  let fili = new Persona();
+  fili.aumentarEdad();
+  // NaN 
+  ```
+  ```
+  class Persona {
+    constructor() {
+      this.edad = 0;
+    }
+  }
+
+  aumentarEdad() {
+    setInterval(() => {
+      this.edad++;
+      console.log(this.edad);
+    }, 1000)
+  }  
+
+  let fili = new Persona();
+  fili.aumentarEdad();
+  // 1... 2.... 3.... 4....
+  ```
+  ### **Los métodos call, apply, y bind 9/42**
 
 
 ### Como funciona JS
