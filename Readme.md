@@ -184,7 +184,111 @@ This siempre representa algo diferente dependiendo el contexto en el que se encu
   fili.aumentarEdad();
   // 1... 2.... 3.... 4....
   ```
-  ### **Los métodos call, apply, y bind 9/42**
+### **Los métodos call, apply, y bind 9/42**
+Estos 3 metodos ayudan a determinar cual sera el contexto en el que usemos el this.
+#### call
+```
+// Establece `this` usando `call`
+function saludar() {
+    console.log(`Hola Soy ${this.name} ${this.lastname}`);
+}
+
+const richard = {
+    name: "Richard",
+    lastname: "Kaufman"
+}
+saludar.call(richard);
+// Hola Soy Richard Kaufman
+
+function caminar( metros, direccion ) {
+    console.log(`${this.name} camina ${metros} hacia ${direccion}`);
+}
+caminar.call(richard, 400, "norte");
+//Richard camina 400 hacia norte
+```
+### apply 
+```
+// Establece `this` usando `apply` y pasar argumentos a la función
+caminar.apply(richard, [800, "NorEste"]);
+```
+### bind
+```
+// Establece `this` en una nueva función usando `bind`
+const daniel = { name: "Daniel", lastname: "Sanchez" };
+const danielSaluda = saludar.bind(daniel);
+danielSaluda();
+
+const danielCamina1 = caminar.bind(daniel,1000);
+danielCamina1("Este");
+
+const danielCamina2 = caminar.bind(daniel);
+danielCamina2(1000, "Este");
+
+// En esta tecnica guardamos varios argumentos y luego llenamos los demas, permite hacer funciones reutilizables
+
+const buttons = document.getElementsByClassName('call-to-action');
+/* buttons.forEach(button => {
+    button.onClick = () => alert("¡Nunca pares de aprender!");
+}); */
+
+/*  Array.prototype.forEach.call(buttons, button => {
+    button.onClick = () => alert("¡Nunca pares de aprender!");
+}); */
+
+[...buttons].forEach(button => {
+    button.onclick = () => {
+        alert('Rest Operator')
+    }
+})
+```
+## **Prototype 10/42**
+En Javascript todo son objetos, no tenemos clases, no tenemos ese plano para crear objetos.
+
+Todos los objetos 'heredan' de un prototipo que a su vez hereda de otro prototipo y así sucesivamente creando lo que se llama la prototype chain.
+
+La keyword new crea un nuevo objeto que 'hereda' todas las propiedades del prototype de otro objeto. No confundir prototype con proto que es sólo una propiedad en cada instancía que apunta al prototipo del que hereda.
+#### Sin new
+```
+const heroMethods = {
+    saludar: function(){
+        console.log(`Me llamo ${this.name}`);
+    },
+}
+
+function Hero( name ) {
+    const hero = {
+        name: name
+    }
+    hero.saludar = heroMethods.saludar;
+    return hero;
+}
+
+const zelda = Hero("Zelda");
+zelda.saludar();
+const link = Hero("Link");
+link.saludar();
+```
+#### Con new
+```
+// New es un atajo para llevar Hero.prototype al objeto
+function Hero( name ) {
+    //const hero = Object.create(Hero.prototype);
+    this.name = name;
+}
+
+Hero.prototype.saludar = function(){
+        console.log(`New: ${this.name}`);
+};
+
+const zelda = new Hero("Zelda");
+zelda.saludar();
+const link = new Hero("Link");
+link.saludar();
+```
+Con el new se ahorra el uso de <class>.prototype... para acceder a metodos de un objeto usado como clase.
+
+### **Herencia Prototipal 11/42**
+
 
 
 ### Como funciona JS
@@ -194,3 +298,12 @@ This siempre representa algo diferente dependiendo el contexto en el que se encu
 ### TypeSript
 ### Patrones de diseño
 ### Proyecto: MediaPlayer
+
+
+
+
+## Extra
+https://www.youtube.com/watch?v=m7AgxJSCMVw&t=12s&ab_channel=jonmircha
+
+Js es un lenguaje Single Thread(Un unico hilo).
+### Procesamiento Single Thread y Multi Thread
