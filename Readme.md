@@ -288,7 +288,25 @@ link.saludar();
 Con el new se ahorra el uso de <class>.prototype... para acceder a metodos de un objeto usado como clase.
 
 ### **Herencia Prototipal 11/42**
+*\_\_proto\_\_* se encadena entre los objetos de la misma "clase", cuando no encuentra la funcion en uno, pasa al siguiente y al siguiente, asi sucesivamente hasta llegar al Object, que es el objeto original.
+```
+function Hero( name ) {
+  this.name = name;
+}
 
+Hero.prototype.saludar = function(){
+    console.log(`Hola soy: ${this.name}.`);
+};
+
+const zelda = new Hero("Zelda");
+zelda
+Hero {name: 'Zelda'}
+  name: "Zelda"
+  [[Prototype]]: Object
+    saludar: ƒ ()
+    constructor: ƒ Hero( name )
+    [[Prototype]]: Object
+```
 
 
 ### Como funciona JS
