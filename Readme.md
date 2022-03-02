@@ -307,9 +307,66 @@ Hero {name: 'Zelda'}
     constructor: ƒ Hero( name )
     [[Prototype]]: Object
 ```
-
-
 ### Como funciona JS
+### **Parsers y el Abstract Syntax Tree 12/42**
+  - Recibo codigo fuente
+  - Parsea el codigo y produce un Abstract Syntax Tree (AST)
+  - Se compila a bytecode(Lenguaje de bajo nivel) y se ejecuta
+  - Se optimiza a machine code y reemplaza el codigo base
+
+  Que hace un parser: 
+
+  #### Parser de V8
+  |Eager Parsing|LazyParsing|
+  |--------|--------|
+  |-Encuentra errores de sintaxis|-Doble de rapido que el eager parser|
+  |-Crea el AST|-No crea el AST|
+  |-Construye scopes|-Construye los scopes parcialmente|
+
+  - Eager parsing
+    - Crea el AST en estructura de arbol que representa el programa.
+  - Lazy parsing
+    - Retrasa partes del codigo que no hace falta ejecutarlo en el momento.
+
+  Demo - Tokens
+
+  Code
+  ```
+  let bar = "foo";
+  ```
+  Tree - Token
+  ```  
+    [
+    {
+        "type": "Keyword",
+        "value": "let"
+    },
+    {
+        "type": "Identifier",
+        "value": "bar"
+    },
+    {
+        "type": "Punctuator",
+        "value": "="
+    },
+    {
+        "type": "String",
+        "value": "\"foo\""
+    },
+    {
+        "type": "Punctuator",
+        "value": ";"
+    }
+  ]  
+  ```
+
+  AST
+  Es un grafo, es una estructura en forma de arbol. 
+
+  ![image ](https://i.imgur.com/EOQFwj0.png)
+
+  ### **Abstract Syntax Tree en Práctica 13/42**
+
 ### Fundamentos intermedios
 ### Fundamentos avanzados
 ### APIs del DOM
