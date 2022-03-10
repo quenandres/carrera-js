@@ -241,6 +241,12 @@ const buttons = document.getElementsByClassName('call-to-action');
     }
 })
 ```
+
+bind() 👉 Éste método crea una nueva función que cuando es llamada, le otorga el 'this' al valor provisto. Si llamamos al método, el 'this' se pierde ya que el contexto ahora es otro y no encuentra el atributo, pero con "bind" se soluciona.
+
+call() 👉 El resultado es el mismo que con 'bind', lo que cambia es la forma de llamarlo, se hace directamente y mantiene el contexto.
+
+apply() 👉 Funciona y se llama prácticamente igual que .call(), la diferencia es que los argumentos se pasan como array.
 ## **Prototype 10/42**
 En Javascript todo son objetos, no tenemos clases, no tenemos ese plano para crear objetos.
 
@@ -366,6 +372,24 @@ Hero {name: 'Zelda'}
   ![image ](https://i.imgur.com/EOQFwj0.png)
 
   ### **Abstract Syntax Tree en Práctica 13/42**
+  El AST es una manera hace que sea mas facil el analisis de codigo, con esto se crean reglas para Eslint, es la manera en la que el motor de js usa para convertirlo en bytecode
+
+  ### **Cómo funciona el JavaScript Engine 14/42**
+  |Bytecode|Machine Code|
+  |--------|------------|
+  |- Codigo paracido a assembly| - Binario|
+  |- Portatil|- Instrucciones especificas a una arquitectira o procesador|
+  |- Ejecutado por una virtual machine| |
+
+  - El V8 Es usado en Chrome (1 Metodo)
+  - El SpiderMonkey en Firefox (2 Metodos de optimizacion)
+  - El Chacrak es el de Edge (2 Metodos de optimizacion)
+  - El JavaScriptCore el de safari (4 Metodos de optimizacion)
+
+  ### **Event Loop 15/42**
+  Es lo que hace parecer a JS multihilo
+  - Stack: Lleva rastros de donde esta el programa con el listado de funciones a ejecutar.
+  - Heap: Estructura desorganizada donde se guarda información sobre las variables.
 
 ### Fundamentos intermedios
 ### Fundamentos avanzados
