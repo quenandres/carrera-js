@@ -390,6 +390,7 @@ Hero {name: 'Zelda'}
   Es lo que hace parecer a JS multihilo
   - Stack: Lleva rastros de donde esta el programa con el listado de funciones a ejecutar.
   - Heap: Estructura desorganizada donde se guarda información sobre las variables.
+  
 
 ### Fundamentos intermedios
 ### Fundamentos avanzados
