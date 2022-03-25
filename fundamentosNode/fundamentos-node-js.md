@@ -66,3 +66,6 @@ Usa spawn cuando quieras que el proceso hijo devuelva datos binarios enormes a N
 Usa exec cuando quieras que el proceso hijo devuelva mensajes de estado simples.
 Usa spawn cuando quieras recibir datos desde que el proceso arranca.
 Usa exec cuando solo quieras recibir datos al final de la ejecución.
+
+## Módulos nativos en C++ 16/31
+
