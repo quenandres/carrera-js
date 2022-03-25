@@ -55,3 +55,4 @@ console.groupEnd: finaliza la agrupación.
 console.clear: Limpia la consola.
 
 ## Errores (try / catch) 14/31
+Cuando se genera un error, node propaga el error hacia arriba, hasta que esta es caputado. si el error no se captura node se detiene.
