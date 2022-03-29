@@ -73,3 +73,11 @@ Usa exec cuando solo quieras recibir datos al final de la ejecución.
 ## HTTP 17/31
 
 ## OS 18/31
+
+## Process 19/31
+
+
+## Construyendo módulos: Require e Import 21/31
+A dia de hoy ya no es necesario utilizar modulos experimentales
+
+## Módulos útiles 22/31
