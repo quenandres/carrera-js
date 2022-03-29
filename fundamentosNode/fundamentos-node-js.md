@@ -91,3 +91,9 @@ A dia de hoy ya no es necesario utilizar modulos experimentales
 ## Datos almacenados vs en memoria 23/31
 Escribir en memoria es mas rapido que en disco
 Un buffer es un montón de datos y un stream es un proceso donde pasan un montón de datos.
+
+## Buffers 24/31
+Los buffers son datos en binario con codigo hexadecimal ```0100 1000 | 4 8```
+Permite trabajar byte a byte y cambiarlo uno por uno.
+Un buffer generalmente no sale solo, proviene de un stream
+
