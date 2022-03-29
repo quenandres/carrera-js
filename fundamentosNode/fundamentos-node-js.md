@@ -81,3 +81,9 @@ Usa exec cuando solo quieras recibir datos al final de la ejecución.
 A dia de hoy ya no es necesario utilizar modulos experimentales
 
 ## Módulos útiles 22/31
+- Fechas
+  - moment.js
+- Imagenes
+  - sharp.js
+- Contraseñas
+  - bcrypt.js
