@@ -87,3 +87,7 @@ A dia de hoy ya no es necesario utilizar modulos experimentales
   - sharp.js
 - Contraseñas
   - bcrypt.js
+
+## Datos almacenados vs en memoria 23/31
+Escribir en memoria es mas rapido que en disco
+Un buffer es un montón de datos y un stream es un proceso donde pasan un montón de datos.
