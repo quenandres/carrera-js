@@ -1,0 +1,8 @@
+soy un
+archivo
+para
+lectura
+de datos
+en
+el
+stream

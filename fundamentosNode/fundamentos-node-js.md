@@ -97,3 +97,4 @@ Los buffers son datos en binario con codigo hexadecimal ```0100 1000 | 4 8```
 Permite trabajar byte a byte y cambiarlo uno por uno.
 Un buffer generalmente no sale solo, proviene de un stream
 
+## Streams 25/31
