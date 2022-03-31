@@ -1,15 +1,16 @@
 const http = require('http');
 
-function router(req, res) {
+function router(req, res) {    
     console.log('nueva petición');
     console.log(req.url);
     switch (req.url) {
         case '/hola':
-            res.write('Hola, que tal');   
+            let saludo = hola();
+            res.write(saludo);   
             res.end();         
             break;    
         default:
-            res.write('Error 404');   
+            res.write('Error 404');
             res.end();
             break;
     }
@@ -18,5 +19,9 @@ function router(req, res) {
 }
 
 http.createServer(router).listen(3000);
+
+function hola() {
+    return 'Hola que tal !';
+}
 
 console.log('Escuchando http en el puerto 3000');

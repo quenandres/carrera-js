@@ -98,3 +98,17 @@ Permite trabajar byte a byte y cambiarlo uno por uno.
 Un buffer generalmente no sale solo, proviene de un stream
 
 ## Streams 25/31
+
+
+## Benchmarking (console time y timeEnd) 26/31
+// Inicio del bucle
+console.time()
+
+// Final del bucle
+console.timeEnd()
+
+## Debugger 27/31
+nodemon --inspect modulos/http.js
+
+En chrome
+```chrome://inspect```
