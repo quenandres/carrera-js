@@ -117,3 +117,9 @@ En chrome
 
 ## Scraping 29/31
 puppeteer para Realizar scraping, tengo entendido que tambien se puede hacer testing
+
+## Automatización de procesos 30/31
+Aplicación gulp
+
+## Aplicaciones de escritorio 31/31
+Electron
