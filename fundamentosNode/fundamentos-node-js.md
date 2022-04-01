@@ -112,3 +112,5 @@ nodemon --inspect modulos/http.js
 
 En chrome
 ```chrome://inspect```
+
+## Error First Callbacks 28/31
