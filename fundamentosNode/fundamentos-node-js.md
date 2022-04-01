@@ -114,3 +114,6 @@ En chrome
 ```chrome://inspect```
 
 ## Error First Callbacks 28/31
+
+## Scraping 29/31
+puppeteer para Realizar scraping, tengo entendido que tambien se puede hacer testing
