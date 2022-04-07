@@ -388,8 +388,12 @@ Hero {name: 'Zelda'}
 
   ### **Event Loop 15/42**
   Es lo que hace parecer a JS multihilo
-  - Stack: Lleva rastros de donde esta el programa con el listado de funciones a ejecutar.
-  - Heap: Estructura desorganizada donde se guarda información sobre las variables.
+  - Call Stack: Lleva rastros de donde esta el programa con el listado de funciones a ejecutar.
+  - Memory Heap: Estructura desorganizada donde se guarda información sobre las variables.
+  - Schedule Tasks: Aquí se agregan a la cola, las tareas programadas para su ejecución. (setTime)
+  - Task Queue: Aquí se agregan las tares que ya están listas para pasar al stack y ser ejecutadas. El stack debe estar vacío para que esto suceda.
+  - MicroTask Queue: Aquí se agregan las promesas. Esta Queue es la que tiene mayor prioridad.
+  ### Promesas 16/42
   
 
 ### Fundamentos intermedios
