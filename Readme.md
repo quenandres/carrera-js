@@ -394,6 +394,7 @@ Hero {name: 'Zelda'}
   - Task Queue: Aquí se agregan las tares que ya están listas para pasar al stack y ser ejecutadas. El stack debe estar vacío para que esto suceda.
   - MicroTask Queue: Aquí se agregan las promesas. Esta Queue es la que tiene mayor prioridad.
   ### Promesas 16/42
+  ### Getters y setters 17/42
   
 
 ### Fundamentos intermedios
