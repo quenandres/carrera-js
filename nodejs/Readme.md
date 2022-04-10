@@ -27,3 +27,11 @@ app.get('/categories/:id', (req, res) => {
 ### GET: parámetros query 7/25
 
 Los endpoints especificos deben ir antes de los endpoint dinamicos.
+
+### Separación de responsabilidades con express.Router 8/25
+Cada pieza de codigo deberia tener solo una responsabilidad
+- Class
+- Archive
+- Methods
+
+Un metodo que se llama sumar debe unicamente sumar
