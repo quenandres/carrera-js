@@ -10,3 +10,5 @@ Representaciona State Transfer
  - Post: Crear
  - Delete: Eliminar
 
+
+### GET: recibir parámetros 6/25
