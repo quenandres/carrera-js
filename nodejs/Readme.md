@@ -35,3 +35,15 @@ Cada pieza de codigo deberia tener solo una responsabilidad
 - Methods
 
 Un metodo que se llama sumar debe unicamente sumar
+
+### POST: método para crear 10/25
+#### Versionamiento de API'S
+```
+function routerApi(app) {
+  const router = express.Router();
+  app.use('/api/v1', router);
+  router.use('/products', productRouter);
+  router.use('/categories', categoriesRouter);
+  router.use('/users', usersRouter);
+}
+```
