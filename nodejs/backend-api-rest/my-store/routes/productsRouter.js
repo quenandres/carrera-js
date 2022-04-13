@@ -31,6 +31,7 @@ router.get('/:id', (req, res) => {
   });
 });
 
+
 router.post('', (req, res) => {
   const body = req.body;
   res.json({
@@ -38,5 +39,27 @@ router.post('', (req, res) => {
     data: body
   });
 });
+
+router.patch('/:id', (req, res) => {
+  const { id } = req.params;
+  const body   = req.body;
+  res.json({
+    message: 'update',
+    data: body,
+    id
+  });
+});
+
+
+router.delete('/:id', (req, res) => {
+  const { id } = req.params;
+
+  res.json({
+    message: 'delete',
+    id
+  });
+});
+
+
 
 module.exports = router;

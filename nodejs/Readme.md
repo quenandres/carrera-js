@@ -47,3 +47,5 @@ function routerApi(app) {
   router.use('/users', usersRouter);
 }
 ```
+
+### PUT, PATCH y DELETE 11/25
