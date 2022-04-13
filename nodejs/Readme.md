@@ -49,3 +49,11 @@ function routerApi(app) {
 ```
 
 ### PUT, PATCH y DELETE 11/25
+
+### Códigos de estado o HTTP response status codes 12/25
+Es un estandar que nos permite saber que paso con la petición
+ - Respuestas informativas (100–199),
+ - Respuestas satisfactorias (200–299),
+ - Redirecciones (300–399),
+ - Errores de los clientes (400–499),
+ - Errores de los servidores (500–599).
