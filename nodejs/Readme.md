@@ -67,3 +67,20 @@ The clean architecture
 - Libs
   - Models
 
+
+### Crear, editar y eliminar 14/25
+! importante para actualizacion con patch
+```
+update(id, changes) {
+    const index = this.products.findIndex(item => item.id === id);
+    if( index === -1 ) {
+        throw new Error('product not found');
+    }
+    const product = this.products[index];
+    this.products[index] = {
+      ...product,
+      ...changes
+    };
+    return this.products[index];
+}
+```
