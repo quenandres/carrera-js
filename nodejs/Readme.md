@@ -121,3 +121,33 @@ async update(id, changes) {
   return this.products[index];
 }
 ```
+
+
+¿Qué son los Middlewares? 16/25
+Un middleware es un bloque de código que se ejecuta entre la petición que hace el usuario (request) hasta que la petición llega al servidor. Pueden correr de forma secuencial. Donde un Middleware empieza a ejecutar algo y si todo sale bien ejecuta el siguiente.
+ - Middleware a nivel de aplicación
+ - Middleware a nivel de direccionamiento (routers)
+ - Middleware para manejo de errores
+ - Middlewares incorporados
+ - Middleware de terceros
+
+ Casos de uso
+ - Funcionar como pipes, es decir, conectar unos con otros al igual que una tubería donde la salida de uno, es la entrada de información del otro.
+ - Validar datos.
+ - Capturar errores.
+ - Validar permisos.
+ - Controlar accesos.
+
+Ej:
+```
+function (req, res, next) {
+  console.log('LOGGED');
+  next();
+};
+```
+
+
+### Middleware para HttpErrors 17/25
+Se pueden unir a sistemas de tracking.
+Los middleware se deben definir despues de definidas las rutas.
+Un detalle importante es el uso de middlewares con codigos de status http.
