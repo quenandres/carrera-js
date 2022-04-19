@@ -159,3 +159,15 @@ Libreria boom
 ```
 
 Uso de la libreria boom con retorno de errores con codigo http, asignados por la libreria según la función del error que se asigna.
+
+### Validación de datos con Joi 19/25
+Libreria para validación de datos.
+```
+npm i joi
+```
+Uso de closures para creación de middleware dinamicas
+
+|Libreria|Descripción|
+|---|---|
+|@hapi/boom|Manejo de errores|
+|joi|Validacion de datos|
