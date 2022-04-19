@@ -16,7 +16,11 @@ class CategoriesService {
   }
 
   find() {
-    return this.categories;
+    return new Promise((resolve,reject) => {
+      setTimeout(() => {
+        resolve(this.categories);
+      }, 4500);
+    })
   }
 
   findOne(id) {

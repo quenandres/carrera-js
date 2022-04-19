@@ -84,3 +84,40 @@ update(id, changes) {
     return this.products[index];
 }
 ```
+
+### Async await y captura de errores 15/25
+En las rutas se pueden definir funciones asincronas, que esperen por promesas que resulven las funciones en los servicios.
+
+Se pueden capturar errores con try/catch
+Router:
+```
+router.patch('/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const body   = req.body;
+    const product = await service.update(id, body);
+    res.json(product);
+  } catch (error) {
+    res.status(404).json({
+      message: error.message
+    });
+  }
+});
+```
+
+
+Service:
+```
+async update(id, changes) {
+  const index = this.products.findIndex(item => item.id === id);
+  if( index === -1 ) {
+      throw new Error('product not found');
+  }
+  const product = this.products[index];
+  this.products[index] = {
+    ...product,
+    ...changes
+  };
+  return this.products[index];
+}
+```

@@ -4,30 +4,25 @@ const CategoriesService = require('../services/categories.service');
 const service = new CategoriesService();
 
 
-router.get('/', (req, res) => {
-  const categories = service.find();
-  res.status(200).json(categories);
-});
-
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
   const body = req.body;
-  const category = service.create(body);
+  const category = await service.create(body);
   return res.status(201).json(category);
 });
 
-router.get('/', (req, res) => {
-  const categories = service.find();
+router.get('/', async (req, res) => {
+  const categories = await service.find();
   return res.status(200).json(categories);
 });
 
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
   const { id } = req.params;
-  const category = service.findOne(id);
+  const category = await service.findOne(id);
   return res.status(200).json(category);
 });
 
 
-router.get('/:cateogryId/products/:productId', (req, res) => {
+router.get('/:cateogryId/products/:productId', async (req, res) => {
   const { cateogryId, productId } = req.params;
   res.json({
     cateogryId,
@@ -37,16 +32,16 @@ router.get('/:cateogryId/products/:productId', (req, res) => {
   });
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', async (req, res) => {
   const { id } = req.params;
-  const category = service.delete(id);
+  const category = await service.delete(id);
   return res.json(category);
 });
 
-router.patch('/:id', (req, res) => {
+router.patch('/:id', async (req, res) => {
   const { id } = req.params;
   const body   = req.body;
-  const category = service.update(id, body);
+  const category = await service.update(id, body);
   return res.status(200).json(category);
 });
 
