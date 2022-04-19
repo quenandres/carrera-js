@@ -151,3 +151,11 @@ function (req, res, next) {
 Se pueden unir a sistemas de tracking.
 Los middleware se deben definir despues de definidas las rutas.
 Un detalle importante es el uso de middlewares con codigos de status http.
+
+### Manejo de errores con Boom 18/25
+Libreria boom
+```
+@hapi/boom
+```
+
+Uso de la libreria boom con retorno de errores con codigo http, asignados por la libreria según la función del error que se asigna.
