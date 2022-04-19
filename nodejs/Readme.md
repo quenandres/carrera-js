@@ -167,6 +167,9 @@ npm i joi
 ```
 Uso de closures para creación de middleware dinamicas
 
+### Probando nuestros endpoints 20/25
+Creamos una funcion que sirve como middleware y los crea dinamicamente, en el schema de los productos se ponen los atributos que debe cumplir y en la ruta se especifica que schema se debe tener en cuenta y los valores que debe especificar en el middleware.
+
 |Libreria|Descripción|
 |---|---|
 |@hapi/boom|Manejo de errores|
