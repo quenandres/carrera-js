@@ -170,6 +170,15 @@ Uso de closures para creación de middleware dinamicas
 ### Probando nuestros endpoints 20/25
 Creamos una funcion que sirve como middleware y los crea dinamicamente, en el schema de los productos se ponen los atributos que debe cumplir y en la ruta se especifica que schema se debe tener en cuenta y los valores que debe especificar en el middleware.
 
+### Middlewares populares en Express.js 21/25
+- CORS: Middleware para habilitar CORS (Cross-origin resource sharing) en nuestras rutas o aplicación
+- Morgan: Un logger de solicitudes HTTP para Node.js.
+- Helmet: Helmet nos ayuda a proteger nuestras aplicaciones Express configurando varios encabezados HTTP. ¡No es a prueba de balas de plata, pero puede ayudar!
+- Express Debug: Nos permite hacer debugging de nuestras aplicaciones en Express mediante el uso de un toolbar en la pagina cuando las estamos desarrollando.
+- Express Slash: Este middleware nos permite evitar preocuparnos por escribir las rutas con o sin slash al final de ellas.
+- Passport: Passport es un middleware que nos permite establecer diferentes estrategias de autenticación a nuestras aplicaciones.
+  
+
 |Libreria|Descripción|
 |---|---|
 |@hapi/boom|Manejo de errores|
