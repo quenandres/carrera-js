@@ -172,12 +172,22 @@ Creamos una funcion que sirve como middleware y los crea dinamicamente, en el sc
 
 ### Middlewares populares en Express.js 21/25
 - CORS: Middleware para habilitar CORS (Cross-origin resource sharing) en nuestras rutas o aplicación
+  - Cross-origin Resource Sharing
 - Morgan: Un logger de solicitudes HTTP para Node.js.
 - Helmet: Helmet nos ayuda a proteger nuestras aplicaciones Express configurando varios encabezados HTTP. ¡No es a prueba de balas de plata, pero puede ayudar!
 - Express Debug: Nos permite hacer debugging de nuestras aplicaciones en Express mediante el uso de un toolbar en la pagina cuando las estamos desarrollando.
 - Express Slash: Este middleware nos permite evitar preocuparnos por escribir las rutas con o sin slash al final de ellas.
 - Passport: Passport es un middleware que nos permite establecer diferentes estrategias de autenticación a nuestras aplicaciones.
   
+### Consideraciones para producción 22/25
+- Cors: Que acceso y a quienes le damos acceso para hacer solicitudes
+- Https: Que la API esta sobre servidor de HTTPS
+- Procesos de build: Se ve en procesos que cosas que tiene procesar información (typescript)
+- Remover logs: No es bueno tener logs, a veces esto tiene demoras, existen mejor formas para capturar logs.
+- Seguridad (Helmet): Muy importante la seguridad y para esto se recomienda helmt que es una colección de Middleware que colocan capas de segridad a la aplicación.
+- Testing: Correr prebas unitarias o de integración antes de salir de producción
+
+
 
 |Libreria|Descripción|
 |---|---|
