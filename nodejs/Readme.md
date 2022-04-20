@@ -187,7 +187,8 @@ Creamos una funcion que sirve como middleware y los crea dinamicamente, en el sc
 - Seguridad (Helmet): Muy importante la seguridad y para esto se recomienda helmt que es una colección de Middleware que colocan capas de segridad a la aplicación.
 - Testing: Correr prebas unitarias o de integración antes de salir de producción
 
-
+### Problema de CORS 23/25
+El cors habilita el acceso desde cualquier origen, si la API es publica es bueno, pero si es privada es mejor darle acceso unicamente a los origenes que si debe tener acceso.
 
 |Libreria|Descripción|
 |---|---|
