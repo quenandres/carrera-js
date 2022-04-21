@@ -83,3 +83,6 @@ console.log(rta);
   8,  9
 ]
 ```
+
+### FlatMap 16/19
+Es una union entre el metodo float y el map
