@@ -43,3 +43,8 @@ const rta3 = Object.values(calendars).flatMap(item => {
 });
 console.log('rta3');
 console.log(rta3);
+
+console.log("Object.values(calendars)");
+console.log(Object.values(calendars).flatMap(data => {
+    return data.map(value => value.startDate);
+}));

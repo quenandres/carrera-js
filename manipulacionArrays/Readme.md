@@ -86,3 +86,6 @@ console.log(rta);
 
 ### FlatMap 16/19
 Es una union entre el metodo float y el map
+
+### Mutable functions 17/19
+Combinacion de metodos inmutable y metodos mutables
