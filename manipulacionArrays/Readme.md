@@ -31,3 +31,19 @@ Este método es el contrario a some(), devuelve true o false sí TODOS los eleme
 ### Find y FindIndex 11/19
 - Find: unicamente retorna un objeto que cumpla con la condicional de lo contrario devuelve ```undefined```
 - Finindex: retornar unicamente la posicion del objeto que haya cumplido con la condicional, de lo contrario retorna un ```-1```
+
+### Includes 12/19
+```
+const array1 = [1, 2, 3];
+console.log(array1.includes(2));
+// expected output: true
+```
+
+Tambien se puede incluir un segundo parametro para definir desde donde queremos que haga la busqueda.
+```
+[1, 2, 3].includes(2);     // true
+[1, 2, 3].includes(4);     // false
+[1, 2, 3].includes(3, 3);  // false
+[1, 2, 3].includes(3, -1); // true
+[1, 2, NaN].includes(NaN); // true
+```
