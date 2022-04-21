@@ -89,3 +89,14 @@ Es una union entre el metodo float y el map
 
 ### Mutable functions 17/19
 Combinacion de metodos inmutable y metodos mutables
+
+### Sort 18/19
+Es un metodo para hacer ordenamiento del array original.
+```
+const numbers = [1, 30, 4, 21, 100000];
+numbers.sort();
+[ 1, 100000, 21, 30, 4 ]
+
+numbers.sort((a,b) => a-b );
+[ 1, 4, 21, 30, 100000 ]
+```
