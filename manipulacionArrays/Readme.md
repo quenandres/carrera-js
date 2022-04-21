@@ -47,3 +47,17 @@ Tambien se puede incluir un segundo parametro para definir desde donde queremos 
 [1, 2, 3].includes(3, -1); // true
 [1, 2, NaN].includes(NaN); // true
 ```
+
+### Join 13/19
+- Join: Se usa como metodo para unir un array con un caracter que se definal como parametro
+```
+const elements = ['Fire', 'Air', 'Water'];
+const rta = elements.join('--');
+Fire--Air--Water
+```
+- Split: Se usa para separar un string en array segun el parametro que se de.
+```
+const title = 'Curso de manipulacion de arrays';
+const titleFinal = title.split(' ').join('-').toLowerCase();
+curso-de-manipulacion-de-arrays
+```
