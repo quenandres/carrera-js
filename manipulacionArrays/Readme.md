@@ -24,3 +24,6 @@ Se pueden combinar varios metodos de manipulación de arrays para llevar a un re
 
 ### Some 9/19
 La respuesta nos indica un true o un false.
+
+### Every 10/19
+Este método es el contrario a some(), devuelve true o false sí TODOS los elementos del array cumplen la condición.
