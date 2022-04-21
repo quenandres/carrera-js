@@ -61,3 +61,7 @@ const title = 'Curso de manipulacion de arrays';
 const titleFinal = title.split(' ').join('-').toLowerCase();
 curso-de-manipulacion-de-arrays
 ```
+
+### Concat 14/19
+Este metodo une 2 arrays creando un arreglo nuevo sin modificar los originales.
+Tener muy en cuenta el uso de spread operator.
