@@ -18,3 +18,6 @@ Retorna el maximo el mismo numero de elementos que el array que se esta filtrand
 
 ### Reduce 7/19
 Toma un array y lo reduce a un solo valor.
+
+### Reduce Reloaded 8/19
+Se pueden combinar varios metodos de manipulación de arrays para llevar a un resultado concreto.
