@@ -21,3 +21,6 @@ Toma un array y lo reduce a un solo valor.
 
 ### Reduce Reloaded 8/19
 Se pueden combinar varios metodos de manipulación de arrays para llevar a un resultado concreto.
+
+### Some 9/19
+La respuesta nos indica un true o un false.
