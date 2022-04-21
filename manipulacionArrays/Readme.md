@@ -27,3 +27,7 @@ La respuesta nos indica un true o un false.
 
 ### Every 10/19
 Este método es el contrario a some(), devuelve true o false sí TODOS los elementos del array cumplen la condición.
+
+### Find y FindIndex 11/19
+- Find: unicamente retorna un objeto que cumpla con la condicional de lo contrario devuelve ```undefined```
+- Finindex: retornar unicamente la posicion del objeto que haya cumplido con la condicional, de lo contrario retorna un ```-1```
