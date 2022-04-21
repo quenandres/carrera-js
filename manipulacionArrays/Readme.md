@@ -65,3 +65,21 @@ curso-de-manipulacion-de-arrays
 ### Concat 14/19
 Este metodo une 2 arrays creando un arreglo nuevo sin modificar los originales.
 Tener muy en cuenta el uso de spread operator.
+
+### Flat 15/19
+Manipulación de arrays dentro de otros arrays
+```
+const matriz = [
+    [1,2,3],
+    [4,5,6, [12,13,14]],
+    [7,8,9]
+];
+
+const rta = matriz.flat(2); // Se le debe indicar que cantidad de niveles aplanar
+console.log(rta);
+[
+  1,  2,  3,  4, 5,
+  6, 12, 13, 14, 7,
+  8,  9
+]
+```
