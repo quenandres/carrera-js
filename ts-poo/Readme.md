@@ -40,3 +40,26 @@ Para poder ejecutar funcionamiento con atributos acortados se debe poner explici
 
 ### Getters 7/25
 El getter funciona como una propiedad, con un metodo.
+Debe de retornar algo como si fuese una propiedad.
+
+### Setters 8/25
+A diferencia de Getter no se debe retornar nada.
+Tambien funciona como una propiedad.
+```
+set month(newValue: number) {
+    if( newValue >= 1 && newValue <=12 ) {
+        this._month = newValue;
+    } else {
+        throw new Error('month out of range');
+    }
+}
+
+------------------------
+
+const myDate = new MyDate(1993,1,1);
+console.log(myDate.printFormat());
+myDate.month = 4;
+console.log(myDate.month);
+myDate.month = 78;
+console.log('Esto no debe aparecer', myDate.month);
+```
