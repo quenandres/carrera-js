@@ -74,3 +74,16 @@ Se puede crear metodos con el mismo nombre del padre, si se necesita llamar el m
 
 ### Static 11/25
 Los estaticos sirven tanto en propiedades como en metodos, que nos permiten utilizarlas sin definir un objeto.
+
+### Interfaces 12/25
+Son similares a la herencia pero mas que extender es un contrato para todas las clases que lo implementen.
+Todo lo que va en la interface es publico, y todas las clases lo deben implementar.
+```
+interface name {
+
+}
+
+class name_class implements name {
+    
+}
+```
