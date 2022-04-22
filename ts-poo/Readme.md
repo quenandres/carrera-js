@@ -37,3 +37,6 @@ Sirve para proteger metodos y propiedades que no queremos que se accedan de mane
 ### Constructor 6/25
 Es el metodo con el cual se inicializa la instancia y se inicializan los atributos.
 Para poder ejecutar funcionamiento con atributos acortados se debe poner explicito el acceso de la variable.
+
+### Getters 7/25
+El getter funciona como una propiedad, con un metodo.
