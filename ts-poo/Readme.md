@@ -63,3 +63,6 @@ console.log(myDate.month);
 myDate.month = 78;
 console.log('Esto no debe aparecer', myDate.month);
 ```
+
+### Herencia 9/25
+Es una forma de extender metodos y atributos de una clase a otra.
