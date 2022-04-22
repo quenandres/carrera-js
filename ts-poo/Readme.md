@@ -31,3 +31,6 @@ Los metodos definen el comportamiento de los objetos
 ### Acceso público 4/25
 Por defecto todo en ts que no tenga explicito que tipo de acceso tiene, se crea como publica.
 
+### Acceso privado 5/25
+Sirve para proteger metodos y propiedades que no queremos que se accedan de manera externa.
+
