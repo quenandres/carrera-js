@@ -34,3 +34,6 @@ Por defecto todo en ts que no tenga explicito que tipo de acceso tiene, se crea 
 ### Acceso privado 5/25
 Sirve para proteger metodos y propiedades que no queremos que se accedan de manera externa.
 
+### Constructor 6/25
+Es el metodo con el cual se inicializa la instancia y se inicializan los atributos.
+Para poder ejecutar funcionamiento con atributos acortados se debe poner explicito el acceso de la variable.
