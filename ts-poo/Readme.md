@@ -66,3 +66,8 @@ console.log('Esto no debe aparecer', myDate.month);
 
 ### Herencia 9/25
 Es una forma de extender metodos y atributos de una clase a otra.
+el metodo super() llama al constructor de la clase padre.
+
+### Acceso protegido 10/25
+protected a diferencia de private, permite heredar propiedades de una clase padre a sus clases hijas
+Se puede crear metodos con el mismo nombre del padre, si se necesita llamar el metodo del padre se usa super.<class>() para que realice el mismo funcionamiento del padre.
