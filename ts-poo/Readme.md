@@ -84,6 +84,10 @@ interface name {
 }
 
 class name_class implements name {
-    
+
 }
 ```
+
+### Clases abstractas 13/25
+Cada vez que implementamos una clase abstracta, no podemos crear instancias de esa clase, si no solo de las clases hijas.
+Se usan mas que todo para restringir funcionamiento del padre.
