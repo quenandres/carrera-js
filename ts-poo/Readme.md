@@ -27,3 +27,7 @@ constructor(year: number, month: number, day: number) {
 
 ### Métodos 3/25
 Los metodos definen el comportamiento de los objetos
+
+### Acceso público 4/25
+Por defecto todo en ts que no tenga explicito que tipo de acceso tiene, se crea como publica.
+
