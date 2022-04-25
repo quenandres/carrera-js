@@ -96,3 +96,6 @@ Se usan mas que todo para restringir funcionamiento del padre.
 ### Singleton: constructor privado 14/25
 Singleton nos garantiza que solamente tendremos una instancia de un objeto, previniendo bloqueos de memoria.
 Definimos el constructor como privado y antes de eso, creamos una instancia donde la declaramos igual a la clase o null, aunque instanciemos varias veces las clase siempre se vera reflejada la primer instancia.
+
+### Promesas 15/25
+Es util definir que clase de datos nos devolvera la promesa, axios tiene implementado en su API una especie de async/await para que no sea necesario ponerla cuando lo usamos.
