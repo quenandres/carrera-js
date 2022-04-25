@@ -121,3 +121,6 @@ async function getProducts(): Promise<Product[]> {
 ```
 data = data as Product[]
 ```
+
+### Proyecto: migración de funciones a clases 17/25
+Se migran las funciones a una clase, se hace un ejemplo de Principio de responsabilidad.
