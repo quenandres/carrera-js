@@ -99,3 +99,25 @@ Definimos el constructor como privado y antes de eso, creamos una instancia dond
 
 ### Promesas 15/25
 Es util definir que clase de datos nos devolvera la promesa, axios tiene implementado en su API una especie de async/await para que no sea necesario ponerla cuando lo usamos.
+
+### Tipando respuestas HTTP 16/25
+El tipado de datos es muy importante, desde el retorno, desde el cast y desde una forma a la fuerza de hacer.
+
+- 1
+```
+async function getProducts(): Promise<Product[]> {
+    const { data } = await axios.get('https://api.escuelajs.co/api/v1/products');
+    return data;
+}
+```
+- 2
+```
+async function getProducts(): Promise<Product[]> {
+    const { data } = await axios.get<Product[]>('https://api.escuelajs.co/api/v1/products');
+    return data;
+}
+```
+- 3
+```
+data = data as Product[]
+```
