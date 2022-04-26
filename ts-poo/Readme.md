@@ -130,3 +130,6 @@ Consumimos datos en memoria.
 
 ### ProductHttpService 19/25
 Se crea un servicio completo arrancando desde el modelo(interfase) y especificando entrega de datos.
+
+### Consumiendo ProductHttpService 20/25
+Se consume la API y se maneja el asincronismo y el manejo de errores.
