@@ -124,3 +124,6 @@ data = data as Product[]
 
 ### Proyecto: migración de funciones a clases 17/25
 Se migran las funciones a una clase, se hace un ejemplo de Principio de responsabilidad.
+
+### Consumiendo ProductMemoryService 18/25
+Consumimos datos en memoria.

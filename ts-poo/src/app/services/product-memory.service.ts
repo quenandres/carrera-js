@@ -5,8 +5,12 @@ import { CreateProductDto, UpdateProductDto } from '../dtos/product.dto';
 
 export class ProductMemoryService {
     private products: Product[] = [];
+
+    getAll() {
+      return this.products;
+    }
     
-    crate(data: CreateProductDto): Product {
+    create(data: CreateProductDto): Product {
         const newProduct = {
           ...data,
           id: faker.datatype.number(),
