@@ -127,3 +127,6 @@ Se migran las funciones a una clase, se hace un ejemplo de Principio de responsa
 
 ### Consumiendo ProductMemoryService 18/25
 Consumimos datos en memoria.
+
+### ProductHttpService 19/25
+Se crea un servicio completo arrancando desde el modelo(interfase) y especificando entrega de datos.
