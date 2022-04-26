@@ -133,3 +133,17 @@ Se crea un servicio completo arrancando desde el modelo(interfase) y especifican
 
 ### Consumiendo ProductHttpService 20/25
 Se consume la API y se maneja el asincronismo y el manejo de errores.
+
+### Generics 21/25
+Le podemos enviar un tipado dinamico a ts T.
+
+```
+
+function getValue<T>(value: T) {
+    return value;
+}
+
+getValue<number>(12).toFixed();
+getValue<string>('12').toString();
+getValue<string[]>([]).forEach;
+```
