@@ -151,3 +151,18 @@ getValue<string[]>([]).forEach;
 ### Generics en clases 22/25
 En una clase tambien se pueden enviar los tipos dinamicos.
 Se ponen en uso los genericos, para que se puedan usar un http services generico para todos los servicios.
+
+### Generics en métodos 23/25
+Se puede definir un tipado diferente en la clase y otro en el metodo.
+
+```
+class Test<TypeMain> {}
+```
+
+```
+name_funcion<TypeMethod>() {}
+```
+
+No definir nombres iguales por choque de tipado.
+
+Implementamos la herencia para extender el funcionamiento de un servicio basado en el servicio base.
