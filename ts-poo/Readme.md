@@ -147,3 +147,7 @@ getValue<number>(12).toFixed();
 getValue<string>('12').toString();
 getValue<string[]>([]).forEach;
 ```
+
+### Generics en clases 22/25
+En una clase tambien se pueden enviar los tipos dinamicos.
+Se ponen en uso los genericos, para que se puedan usar un http services generico para todos los servicios.
