@@ -205,3 +205,6 @@ class Person {
 const newPerson = new Person('Fernando','M',new Date(1985,10,21));
 console.log({newPerson});    
 ```
+
+## 26. Herencia - Problemática
+Aplicar el principio de unica responsabilidad con herencia es casi imposible.
