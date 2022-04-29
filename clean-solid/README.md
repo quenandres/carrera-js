@@ -154,3 +154,16 @@ class Info {};
 ## 15. Nombres de funciones, argumentos y parámetros
 Los nombres de las funciones deben ir basados en la acción que realice la funcion.
     - parametros: deberian estar limitados a maximo 3 parametros posicionales. na forma muy util es usar la desestructuración de objetos de js.
+    
+```
+interface Movie {
+  title: string,
+  description: string,
+  rating: number,
+  cast: string[] 
+}
+
+function createMovie({title, description, rating, cast} : Movie) {
+    console.log({ title, description, rating, cast });
+}
+```
