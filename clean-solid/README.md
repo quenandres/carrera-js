@@ -208,3 +208,6 @@ console.log({newPerson});
 
 ## 26. Herencia - Problemática
 Aplicar el principio de unica responsabilidad con herencia es casi imposible.
+
+## 27. Objetos como propiedades
+
