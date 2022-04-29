@@ -168,3 +168,11 @@ No definir nombres iguales por choque de tipado.
 Implementamos la herencia para extender el funcionamiento de un servicio basado en el servicio base.
 
 ### Decoradores 24/25
+Los decoradores son identificados con un ```@```
+Agrega validaciones o comportamientos extra, como por ejemplo validar la expresion regular de un email haciendo uso de:
+```
+@IsEmail()
+email!: string;
+```
+
+Se pueden utilizar en clases, metodos y en metodos.
