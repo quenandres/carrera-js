@@ -44,4 +44,31 @@ La deuda tecnica casi siempre tiene que ver con la calidad, la cual siempre term
 __Refactorización__: Usualmente para que una refactorización fuerte tenga el objetivo esperado, es imprescindible contar con pruebas automáticas. Si no tenemos las pruebas automaticas tendriamos que probar el codigo que cambiamos a mano lo que nos lleva a gastar mas tiempo en la deuda tecnica.
 __clean code__: El codigo debe ser simple y directo, deberia poderse leer como un texto simple bien escrito.
 
+## 11. Nombres pronunciables y expresivos
+Siguiendo recomendaciones de clean code, es necesario tener variables expresivas. Muy util usar palabras en ingles.
 
+❌
+```
+const n = 53;
+const tx = 0.15;
+```
+🟢
+```
+const numberOfUnits = 53;
+const tax           = 0.15;
+```
+
+- Ausencia de informacion tecnica de nombres
+Intentar que las variables tengan información tecnica del funcionamiento de nuestra aplicación.
+
+
+❌
+```
+class AbstractUser {}
+interface UserInterface {}
+```
+🟢
+```
+class User {}
+interface User {}
+```
