@@ -189,3 +189,19 @@ No se debe crear una clase con un nombre generico ya que la cargaremos con respo
 En esta sección hablaremos principalmente sobre clases y conceptos generales para escribir un mejor código.
 
 Es importante tener presente que así como todo, hay excepciones a cada regla, pero esto debería ser un caso aislado y no el estándar. Tratemos de escribir un mejor código y dejar de lado la comodidad de hacer las cosas como se han venido haciendo, especialmente si esas cosas traen muchos problemas.
+
+## 25. Breve introducción a las clases en TypeScript
+```
+type Gender = 'M'|'F';
+class Person {
+
+    constructor(
+        public name: string,
+        public gender: Gender,
+        public birthdate: Date
+    ){}
+}
+
+const newPerson = new Person('Fernando','M',new Date(1985,10,21));
+console.log({newPerson});    
+```
