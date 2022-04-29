@@ -167,3 +167,11 @@ function createMovie({title, description, rating, cast} : Movie) {
     console.log({ title, description, rating, cast });
 }
 ```
+
+## 17. Detalles adicionales sobre funciones
+- Simplicidad es findamental
+- Funciones de tamaño reducido
+- Funciones de una sola línea sin causar complejidad.
+- Menos de 20 lineas de codigo.
+- Evitar el uso del "else", a menos que sea estrictamente necesario.
+- Priorizar el uso de la condicional ternaria.
