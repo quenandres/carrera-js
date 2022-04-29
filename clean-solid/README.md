@@ -175,3 +175,10 @@ function createMovie({title, description, rating, cast} : Movie) {
 - Menos de 20 lineas de codigo.
 - Evitar el uso del "else", a menos que sea estrictamente necesario.
 - Priorizar el uso de la condicional ternaria.
+
+## 20. Principio DRY
+Dont Repeat Yourself.
+- Evitar tener duplicidad de código.
+- Simplifica las pruebas.
+- Ayuda a centralizar los procesos.
+- Aplicar el principo DRY, usuarlmente lleva a refactorizar.
