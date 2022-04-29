@@ -72,3 +72,68 @@ interface UserInterface {}
 class User {}
 interface User {}
 ```
+
+
+## 12. Nombres según el tipo de dato
+- ## __arrays__:
+    Pluralizar variables puede ser util, tambien indicar que son un listado de ese tipo especifico de cosas en un array.
+
+    ❌
+    ```
+    const fruit = ['manzana','platano','fresa'];
+    ```
+    🟢
+    ```
+    const fruitList = ['manzana','platano','fresa'];
+    ```
+    🔵
+    ```
+    const fruits = ['manzana','platano','fresa'];
+    const fruitNames = ['manzana','platano','fresa'];
+    ```
+- ## __booleans__:
+    El agregar un __is__, __can__ o un __has__ al nombre de la variable podria indicar mas facilmente el uso de la variable.
+
+    ❌
+    ```
+    const open = true;
+    const active = true;
+    const write = true;
+    const noValues = true;
+    const notEmpty = true;
+    ```
+    🟢
+    ```
+    const isOpen = true;
+    const isActive = true;
+    const canWrite = true;
+    const hasValues = true;
+    const isEmpty = true;
+    ```
+- ## __numbers__:
+    Al igual que el anterior, se pueden poner prefijos como __min__, __max__, __total__.
+    ❌
+    ```
+    const fruits = 3;
+    const cars = 3;
+    ```
+    🟢
+    ```
+    const maxFruits = 3;
+    const minFruits = 3;
+    const totalOfCars = 3;
+    ```
+- ## __funciones__:
+    Deben representar acciones con el verbo de la acción seguidas de un sustantivo.
+    ❌
+    ```
+    createUserIfNotExist();
+    updateUserIfNotEmpty();
+    sendEmailFieldsValid();
+    ```
+    🟢
+    ```
+    createUser();
+    updateUser();
+    sendEmail();
+    ```
