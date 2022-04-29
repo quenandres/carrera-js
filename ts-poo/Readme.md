@@ -166,3 +166,5 @@ name_funcion<TypeMethod>() {}
 No definir nombres iguales por choque de tipado.
 
 Implementamos la herencia para extender el funcionamiento de un servicio basado en el servicio base.
+
+### Decoradores 24/25
