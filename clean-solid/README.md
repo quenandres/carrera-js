@@ -137,3 +137,16 @@ interface User {}
     updateUser();
     sendEmail();
     ```
+
+
+## 14. Consideraciones para las clases.
+Las clases deben de tener nombres formados por sustantivo o frases de sistantivo.
+
+ - Estos ejemplos son demasiado genericos. Por lo que se le daria mucha responsabilidad a la clase.
+
+❌
+```
+class Manager {};
+class Data {};
+class Info {};
+```
