@@ -4,76 +4,45 @@
     //* Priorizar la composición frente a la herencia
 
     type HtmlType = 'input'|'select'|'textarea'|'radio';
-    interface htmlProps {
-        id   : string,
-        type : HtmlType
-    }
+   
     class HtmlElement {
-
-        public id   : string;
-        public type : HtmlType;
-
-        constructor({
-            id,
-            type,
-        }: htmlProps) {
-            this.id   = id;
-            this.type = type;
-        }
-    }
-
-    interface inputAttibutesProps {
-        value      : string,
-        placeholder: string
+        constructor(
+            public id: string,
+            public type: HtmlType,
+        ) {}
     }
 
     class InputAttributes {
-        public value       : string;
-        public placeholder : string;
-
-        constructor({
-            value,
-            placeholder,
-        }:inputAttibutesProps) {
-            this.value = value;
-            this.placeholder = placeholder;
-        }
+        constructor(
+            public value: string,
+            public placeholder: string
+        ) {}
     }
 
     class InputEvents {
+        constructor() {}
+
         setFocus() {};
         getValue() {};
         isActive() {};
         removeValue() {};
     }
 
-
-    interface InputElementSettings {
-        id: string,
-        type: HtmlType,
-        value: string,
-        placeholder: string,
-    }
-
-    class InputElement {
-
-        htmlElement     : HtmlElement;        
-        inputAttributes : InputAttributes;
-
-        constructor({
-            id,
-            type,
-            value,
-            placeholder 
-        }: InputElementSettings) {
-            this.htmlElement     = new HtmlElement({id, type});
-            this.inputAttributes = new InputAttributes({value, placeholder});
-        }
-    }
-
     //? Idea para la nueva clase InputElement
 
-    const nameField = new InputElement({value: 'Fernando', placeholder:'Enter first name', id:'1', type:'select'});
+    class InputElement {
+        public htmlElement: HtmlElement;
+        public inputAttributes: InputAttributes;
+        public inputEvents: InputEvents;
+
+        constructor(value: string, placeholder: string, id: string) {
+            this.htmlElement = new HtmlElement(id, 'input');
+            this.inputAttributes = new InputAttributes(value, placeholder);
+            this.inputEvents = new InputEvents();
+        }
+    }
+    
+    const nameField = new InputElement('Fernando', 'Enter first name', 'txtName');
 
     console.log({ nameField });
 
