@@ -211,3 +211,8 @@ Aplicar el principio de unica responsabilidad con herencia es casi imposible.
 
 ## 27. Objetos como propiedades
 
+## 28. Principio de responsabilidad única
+Priorizar la composicion frente a la herencia (No extender clases).
+Se eliminan los extends de las clases y los atributos de las otras clases.
+
+Creamos una nueva clase e inicializamos el constructor invocando las demas clases para unificarlas, creando una especie de herencia sin usar el extends e inicializar cada propiedad en cada clase.
