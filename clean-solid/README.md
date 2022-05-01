@@ -263,3 +263,18 @@ S:
     - Puede ser modificado por cualquiera en cualquier momento.
     - No es rasteable.
     - Dificil de testear debido a su ubicación
+
+T: 
+    Lo ideal es buscar un bajo acoplamiento y buena cohesión.
+    Lo que se busca es que los componentes sean autocontenidos, auto suficientes e independientes. Con un objetivo y un proposito bien definido.
+
+    La cohesion se refiere a lo que la clase (o modulo) puede hacer.
+    La baja cohesión significaria que la clase realiza una gran variedad de acciones: es amplia, no se enfoca en lo que debe hacer.
+
+    La alta cohesion significa que la clase se enfoca en lo que debería estar haciendo, es decir, solo métodos relacionados con la intención de la clase.
+
+    El bajo acoplamiento significa que cambiar algo importante en una clase no debería afectar a la otra
+
+    El alto acoplamiento, dificultaría el cambio y el mantenimiento de su código; dado que las clases están muy unidas, hacer un cambio podria requerir una renovación completa del sistema.
+
+    Un buen diseño de software tiene alta cohesión y bajo acoplamiento.
