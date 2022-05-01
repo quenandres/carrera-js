@@ -194,3 +194,8 @@ El cors habilita el acceso desde cualquier origen, si la API es publica es bueno
 |---|---|
 |@hapi/boom|Manejo de errores|
 |joi|Validacion de datos|
+
+# Backend con Node.js Base de Datos con PostgresSQL
+
+### Configuración de Postgres en Docker 4/27
+Configuracion de contenedor postgres con docker-compose
