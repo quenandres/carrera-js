@@ -199,3 +199,6 @@ El cors habilita el acceso desde cualquier origen, si la API es publica es bueno
 
 ### Configuración de Postgres en Docker 4/27
 Configuracion de contenedor postgres con docker-compose
+
+### Explorando Postgres: interfaces gráficas vs. terminal 5/27
+Agregamos nuevo servicio para la interfaz grafica de pgadmin4
