@@ -218,3 +218,16 @@ Se eliminan los extends de las clases y los atributos de las otras clases.
 Creamos una nueva clase e inicializamos el constructor invocando las demas clases para unificarlas, creando una especie de herencia sin usar el extends e inicializar cada propiedad en cada clase.
 
 ## 29. Tarea - Responsabilidad única
+
+
+## 31. Estructura recomendada de una clase
+Cuando se trabaja con clases lo mas recomendable es que el equipo tenga la misma estructura.
+
+  1. Propiedades estaticas.
+  2. Propiedades publicas de ultimo.
+  3. Metodos
+     1. Empezando por los constructores estaticos (metodos estaticos).
+     2. Constructor
+     3. Los metodos estaticos
+     4. Resto de metodos de instancia ordenadas de mayor a menor importancia.
+     5. Getters y Setters al final.
