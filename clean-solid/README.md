@@ -231,3 +231,7 @@ Cuando se trabaja con clases lo mas recomendable es que el equipo tenga la misma
      3. Los metodos estaticos
      4. Resto de metodos de instancia ordenadas de mayor a menor importancia.
      5. Getters y Setters al final.
+
+## 32. Comentarios en el código
+Los comentarios deben ser utiles, no ponerlos donde el codigo es obvio.
+El codigo debe ser lo suficientemente explicativo, asi que no deberia ser obligatorio tener los comentarios.
