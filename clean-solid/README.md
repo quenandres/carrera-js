@@ -235,3 +235,7 @@ Cuando se trabaja con clases lo mas recomendable es que el equipo tenga la misma
 ## 32. Comentarios en el código
 Los comentarios deben ser utiles, no ponerlos donde el codigo es obvio.
 El codigo debe ser lo suficientemente explicativo, asi que no deberia ser obligatorio tener los comentarios.
+
+## 33. Uniformidad en el proyecto
+Problemas similares, soluciones similares.
+La indenctación es primordial organizando la jerarquia del codigo.
