@@ -239,3 +239,27 @@ El codigo debe ser lo suficientemente explicativo, asi que no deberia ser obliga
 ## 33. Uniformidad en el proyecto
 Problemas similares, soluciones similares.
 La indenctación es primordial organizando la jerarquia del codigo.
+
+# Acronimo STUPID (Antipatrones)
+Esta es una sección corta y mayormente explicativa, en donde hablaremos sobre varios "code smells".
+La idea es evitar a toda costa estos puntos que hacen que nuestro código pierda calidad.
+
+
+## 37. CodeSmells - STUPID
+Es un acronimo relacionado directamente con la deuda tecnica.
+
+S Singleton: Pátron singleton.
+T Tight Coupling: alto acoplamiento.
+U Untestability: Código no probable(unit test).
+P Premature optimization: optimizaciones prematuras.
+I Indescriptive Naming: nombres pocos descriptivos
+D Duplication: Duplicidad de código, no aplicar el prindipio DRY
+
+S:
+  - Pros
+    - Garantiza una unica instancia de la clase a lo largo de toda la aplicación
+  - Contras
+    - Vive en el contexto global
+    - Puede ser modificado por cualquiera en cualquier momento.
+    - No es rasteable.
+    - Dificil de testear debido a su ubicación
