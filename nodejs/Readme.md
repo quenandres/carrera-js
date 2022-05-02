@@ -202,3 +202,9 @@ Configuracion de contenedor postgres con docker-compose
 
 ### Explorando Postgres: interfaces gráficas vs. terminal 5/27
 Agregamos nuevo servicio para la interfaz grafica de pgadmin4
+
+
+### Integración de node-postgres 6/27
+```npm install pg```
+Elimine antiguas instalaciones de postgres para evitar problemas con la conexion.
+Se logra conectar la bd con el api.
