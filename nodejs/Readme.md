@@ -208,3 +208,7 @@ Agregamos nuevo servicio para la interfaz grafica de pgadmin4
 ```npm install pg```
 Elimine antiguas instalaciones de postgres para evitar problemas con la conexion.
 Se logra conectar la bd con el api.
+
+### Manejando un Pool de conexiones 7/27
+- Pool de conexiones que permite usar varias conexiones en toda la aplicación pero reutilizando la primera.
+- Un pool de conexiones es un conjunto limitado de conexiones a una base de datos, que es manejado por un servidor de aplicaciones de forma tal, que dichas conexiones pueden ser reutilizadas por los diferentes usuarios.
