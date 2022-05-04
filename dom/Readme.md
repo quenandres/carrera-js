@@ -28,3 +28,25 @@ Existen mas de 70 Web APIS, el DOM es solamente 1 de ellas.
     [caniuse.com](https://caniuse.com/)
 
 ### Leer nodos 4/28
+#### Selectores antiguos
+- document.getElementById : Retorna unicamente un elemento.
+- document.getElementsByTagName('input') : Retorna todos los elementos de este tag.
+- document.getElementByClassName : Retorna todos los elementos con esta clase.
+#### Selectores modernos
+A diferencia de los anteriores siempre usamos.
+
+Seleccionar unicamente 1:
+```
+document.querySelector('')
+```
+
+Seleccionarlos todos:
+```
+document.querySelectorAll('')
+```
+
+
+Especificando CSS selectors
+    - .class
+    - #id
+    - input
