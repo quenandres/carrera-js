@@ -216,3 +216,4 @@ Se logra conectar la bd con el api.
 ### Variables de ambiente en Node.js 8/27
 ```npm i dotenv```
 Se configuran variables de ambiente 
+
