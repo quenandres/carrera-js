@@ -17,3 +17,14 @@ __DOM__:
 - Es una representación del HTML
 - Estructura en forma de árbol de nodos
 - Es un modelo que puede ser modificado
+
+### Web APIs modernas 3/28
+Cuando se combina el DOM + JS = Web API
+Existen mas de 70 Web APIS, el DOM es solamente 1 de ellas.
+
+- Como lo uso
+    [developer.mozilla.org](https://developer.mozilla.org/es/)
+- Puedo usarlo
+    [caniuse.com](https://caniuse.com/)
+
+### Leer nodos 4/28
