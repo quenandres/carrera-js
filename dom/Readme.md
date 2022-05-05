@@ -67,3 +67,51 @@ const nodeListArray = [...nodeList];
 ```
 
 Con esto, nodeListArray adquiere toda la funcionalidad de un array, lo cual es mejor ya que los navegadores estan optimizados a funcionar con arrays.
+
+
+### Crear y agregar 6/28
+Los nodos que se pueden crear son de 2 tipos:
+
+- Elementos
+```
+document.createElement(
+    "H1"
+)
+```
+
+- Texto
+```
+document.createTextNode(
+    "Texto"
+)
+```
+
+#### Agregar nodos
+
+```
+parentElement.appendChild
+```
+- Siempre agregara el elemento al final de la lista.
+
+```
+parentElement.append
+```
+- Es la evolución de appendChild, tambien agrega los elementos al final.
+- Se puede agregar mas de un nodo
+- Se puede agregar text
+- No soportado por internet explorer IE11
+
+```
+parentElement.insertBefore(element, referencia)
+```
+- Se pone como primer parametro el elemento que queremos agregar
+- Se debe tener un nodo de referencia como segundo parametro
+- El nodo de referencia debe ser hijo directo del padre para que funciones.
+
+```
+parentElement.insertAdjacentElement(
+    POSICION: 'beforebegin' | 'afterbegin' | 'beforeend' | 'afterend', NODO
+)
+```
+- Es una API un poco mas complicada de utilizar
+
