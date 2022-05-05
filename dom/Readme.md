@@ -50,3 +50,20 @@ Especificando CSS selectors
     - .class
     - #id
     - input
+
+
+### NodeLists vs Array 5/28
+
+Cuando usamos:
+
+document.querySelectorAll('')
+
+Nos devuelve un tipo llamado NodeList, que son diferentes a los array, este carece de operaciones que los arrays si tienen.
+Para que tengan esta misma funcionalidad podremos hacer lo siguiente.
+
+```
+const nodeList = document.querySelectorAll('input');
+const nodeListArray = [...nodeList];
+```
+
+Con esto, nodeListArray adquiere toda la funcionalidad de un array, lo cual es mejor ya que los navegadores estan optimizados a funcionar con arrays.
