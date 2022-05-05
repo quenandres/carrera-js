@@ -115,3 +115,14 @@ parentElement.insertAdjacentElement(
 ```
 - Es una API un poco mas complicada de utilizar
 
+### Otras formas de agregar 7/28
+
+```
+node.outnerHTML: leer
+```
+Convierte nodos a string que podemos manipular como texto.
+
+```
+node.innerHTML: escribir
+```
+Escribe texto y lo convierte a HTML.
