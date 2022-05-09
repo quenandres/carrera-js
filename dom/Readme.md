@@ -132,3 +132,29 @@ Diferencia entre atributo y propiedad.
  - Atributo : Usado al inicio del html: type, class, id, placeholder
  - Propiedad : Son las que cambiamos dinamicamente como el value pero no se vera reflejado en el dom.
 
+### Eliminar nodos 9/28
+
+```
+nodeElement = $0;
+1. padre = $0.parentElement // Obtiene el padre del elemento seleccionado
+2. padre.removeChild(nodeElement)
+```
+
+```
+nodeElement = $0;
+nodeElement.remove()
+```
+
+
+```
+const padre = document.querySelector('div.py-5.text-center');
+<div class="py-5 text-center"></div>
+const toReplace = document.querySelector('h2');
+
+const node = document.createElement('h1');
+node.textContent = "Test de cambio de child";
+'Test de cambio de child'
+padre.replaceChild(node, toReplace)
+<h2>​Checkout form​</h2>​
+```
+
