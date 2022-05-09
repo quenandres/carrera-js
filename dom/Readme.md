@@ -126,3 +126,9 @@ Convierte nodos a string que podemos manipular como texto.
 node.innerHTML: escribir
 ```
 Escribe texto y lo convierte a HTML.
+
+### Atributos y propiedades 8/28
+Diferencia entre atributo y propiedad.
+ - Atributo : Usado al inicio del html: type, class, id, placeholder
+ - Propiedad : Son las que cambiamos dinamicamente como el value pero no se vera reflejado en el dom.
+
