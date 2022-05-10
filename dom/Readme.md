@@ -185,3 +185,11 @@ document.body.append(...nodos)
 
 #### Spread operator
 Lo que hace es deconstruir ese arreglo y lo pasarlo como parámetros individuales para la función.
+
+
+### Descargando información y creando nodos 12/28
+```
+npx create-snowpack-app my-app --template snowpack-template-tailwind
+```
+
+Conectamos API para obtener datos y pintarlos dinamicamente
