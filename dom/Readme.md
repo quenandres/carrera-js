@@ -193,3 +193,6 @@ npx create-snowpack-app my-app --template snowpack-template-tailwind
 ```
 
 Conectamos API para obtener datos y pintarlos dinamicamente
+
+### Enriqueciendo la información 13/28
+Practica de renderizacion de datos.
