@@ -196,3 +196,16 @@ Conectamos API para obtener datos y pintarlos dinamicamente
 
 ### Enriqueciendo la información 13/28
 Practica de renderizacion de datos.
+
+
+### Usando la API de internacionalización del browser 14/28
+```
+const formaPrice = (price) => {
+    const newPrice = new window.Intl.NumberFormat('en-EN',{
+        style: 'currency',
+        currency: 'USD'
+    }).format(price);
+
+    return newPrice;
+}
+```
