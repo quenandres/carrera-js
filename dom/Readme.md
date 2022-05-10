@@ -155,6 +155,33 @@ const node = document.createElement('h1');
 node.textContent = "Test de cambio de child";
 'Test de cambio de child'
 padre.replaceChild(node, toReplace)
-<h2>​Checkout form​</h2>​
+<h2>Checkout form</h2>
 ```
 
+### Operaciones en lote 10/28
+
+Trabajar con el DOM no es gratuito, lo que mas cuesta es hacer operaciones en DOM.
+- Operaciones en lote: 
+Esta forma cambia 100 veces el DOM.
+```
+for (let i = 0; i < 100; i++) {
+    const node = document.createElement('input');
+    document.body.appendChild(node)
+}
+```
+
+- Delegacion de eventos
+
+```
+const nodos = [];
+for (let i = 0; i < 100; i++) {
+    const node = document.createElement('input');
+    nodos.push(node);
+}
+-> 100
+
+document.body.append(...nodos)
+```
+
+#### Spread operator
+Lo que hace es deconstruir ese arreglo y lo pasarlo como parámetros individuales para la función.
