@@ -256,3 +256,6 @@ app.addEventListener('click', (event) => {
 
 ### Nuestro propio plugin Lazy Loading 20/28
 API de zorros https://randomfox.ca/?i=122
+
+### Creando las imagenes con JavaScript 21/28
+Se crean funciones para darle funcionalidad de traer las imagenes.
