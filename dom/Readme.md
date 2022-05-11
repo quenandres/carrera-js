@@ -253,3 +253,6 @@ app.addEventListener('click', (event) => {
     }
 });
 ```
+
+### Nuestro propio plugin Lazy Loading 20/28
+API de zorros https://randomfox.ca/?i=122
