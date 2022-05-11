@@ -230,3 +230,13 @@ input.removeEventListener('input', accion);
 ```
 
 Si usamos arrow funcion no podremos eliminar la funcion de la llamada del input.
+
+
+### Event propagation 17/28
+Los eventos se propagan desde el evento interno hacia afuera hasta llegar al document.
+
+- H2
+  - DIV
+    - BODY
+
+Existe una opción de evento.stopPropagation() que detiene la propagación de los eventos.
