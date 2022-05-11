@@ -262,3 +262,6 @@ Se crean funciones para darle funcionalidad de traer las imagenes.
 
 ### Intersection Observer 22/28
 Permite saber cuando es visible un objeto o que tan cerca o que tan lejos esta de serlo.
+
+### Aplicando Lazy loading 23/28
+Funcionalidad de lazy loading implementada.
