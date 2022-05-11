@@ -209,3 +209,24 @@ const formaPrice = (price) => {
     return newPrice;
 }
 ```
+
+### Reaccionar a lo que sucede en el DOM 16/28
+El evento input contiene los eventos change de js, se le agrega funcionalidad de escucha permanente.
+```
+const input = document.getElementById('email');
+
+input.addEventListener('input', (event) => {
+    if(event.data === 'p' ){
+        console.log('Escribiste una p');
+    }
+});
+```
+
+Se remueve el evento de escucha permanente de un nodo.
+```
+const input = document.getElementById('email');
+
+input.removeEventListener('input', accion);
+```
+
+Si usamos arrow funcion no podremos eliminar la funcion de la llamada del input.
