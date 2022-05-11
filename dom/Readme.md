@@ -240,3 +240,16 @@ Los eventos se propagan desde el evento interno hacia afuera hasta llegar al doc
     - BODY
 
 Existe una opción de evento.stopPropagation() que detiene la propagación de los eventos.
+
+
+### Event delegation 18/28
+En vez de poner el eventListener en cada objeto, se pone en un padre principal y con condicionales se define cual deberia ser la acción.
+
+```
+const app = document.querySelector("#container");
+app.addEventListener('click', (event) => {
+    if( event.target.nodeName == "H2" ) {
+        window.alert('Hola');
+    }
+});
+```
