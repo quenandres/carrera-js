@@ -14,3 +14,13 @@ Vemos la logica del callback-hell, mostrando la mala practica que pueden ser.
 ### Implementando Promesas 7/12
 
 ### Resolver problema con Promesas 8/12
+
+
+### Conociendo Async/await 9/12
+Async/await no es mas que Syntax Sugar. Es una manera mas bonita de hacer lo mismo que estabamos haciendo con 
+```.then()```. 
+La clave es recordar que si una función regresa un promesa, podemos usar el keyword await, que le indicia al navagador: “Espera a que la promesa se resuleva y almacena su resultado en esta variable”. Todo esto toma lugar dentro de una función asincrona, asi que usamos async para lograr esto
+
+
+
+### Resolver problema con Async/Await 10/12
