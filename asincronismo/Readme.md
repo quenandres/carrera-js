@@ -12,3 +12,5 @@ Vemos la logica del callback-hell, mostrando la mala practica que pueden ser.
 
 
 ### Implementando Promesas 7/12
+
+### Resolver problema con Promesas 8/12
