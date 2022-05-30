@@ -407,6 +407,29 @@ Hero {name: 'Zelda'}
 
 
 
+# Apuntes
+### Middleware
+Los middlewares son funciones que tienen acceso al objeto req, al objeto res y a la siguiente función de middleware del ciclo, se denomina generalmente como next. 
+Se usan para:
+- Ejecutar cualquier codigo.
+- Realizar cambios en la solicitud y los objetos de respuesta.
+- Finalizar el ciclo de solicitud/respuestas.
+- Invocar la siguiente función de middleware en la pila.
+Existen varios tipos de middleware
+  - Middleware de nivel de aplicación
+
+### Asincronismo
+  - 
+### Proxy
+### CORS
+### JWT
+### Virtual DOM
+### Hooks
+### Lazy loading
+### CSRF
+### Reduce
+### IIFE
+
 ## Extra
 https://www.youtube.com/watch?v=m7AgxJSCMVw&t=12s&ab_channel=jonmircha
 
