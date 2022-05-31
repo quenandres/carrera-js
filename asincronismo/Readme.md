@@ -24,3 +24,19 @@ La clave es recordar que si una función regresa un promesa, podemos usar el key
 
 
 ### Resolver problema con Async/Await 10/12
+
+### Callbacks Vs Promesas Vs Async/Await 11/12
+## Callback - hell
+    - La anidacion de callbacks puede ser dificil de leer a futuro.
+    - Flujo poco intuitivo.
+    - Manejo de errores algo tedioso.
+## Promises
+    - Facil de enlazar con el return siguiente.
+    - Propensos a errores si no se retorna el llamado siguiente.
+    - No sirve en todos los navegadores, necesario uns transpilador.
+  
+## Async/Await
+    - El try catch funciona perfectarmente.
+    - Facil de leer.
+    - Se espera a que algo suceda y da un orden mas claro.
+    - Tambien necesitamos un polify para que funcione en todos los navegadores.
