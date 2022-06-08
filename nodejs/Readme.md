@@ -217,3 +217,18 @@ Se logra conectar la bd con el api.
 ```npm i dotenv```
 Se configuran variables de ambiente 
 
+
+### ¿Qué es un ORM (Object Relational Mapping)? Instalación y configuración de Sequelize ORM 9/27
+Los 2 ORM mas usados en Node
+  - Sequelize ( Mas recomendado en entornos con js )
+  - Typeorm ( Mas recomendado en entornos con ts )
+
+```
+npm install --save sequelize
+```
+
+Serializar los datos
+```
+npm install --save pg-hstore
+```
+
