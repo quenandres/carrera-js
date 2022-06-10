@@ -235,3 +235,6 @@ npm install --save pg-hstore
 ### Tu primer modelo en Sequelize 10/27
 Se crearan entidades o modelos para definir los esquemas.
 Se crean los modelos y se conectan con la libreria sequelize.
+
+
+### Crear, actualizar y eliminar 11/27
