@@ -1,22 +1,16 @@
-const faker   = require('faker');
-const pool    = require('./../libs/postgres.pool.js');
+const { models } = require('./../libs/sequelize.js');
 
-class CategoriesService {
+class UserService {
 
-  constructor() {
-    this.categories = [];
-    this.pool = pool;
-    this.pool.on('error', (err) => console.log(err));
-  }
+  constructor() {}
 
   create(data) {
     return data;
   }
 
   async find() {
-    const query = 'SELECT * FROM tasks';
-    const rta    = await pool.query(query);
-    return rta.rows;
+    const rta = await models.User.findAll();
+    return rta;
   }
 
   findOne(id) {
@@ -35,4 +29,4 @@ class CategoriesService {
 
 }
 
-module.exports = CategoriesService;
+module.exports = UserService;
