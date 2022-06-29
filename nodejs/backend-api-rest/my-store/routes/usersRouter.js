@@ -3,13 +3,11 @@ const router = express.Router();
 
 const userService = require('./../services/user.service');
 const validatorHandler = require('./../middlewares/validator.handler');
-const { createUserSchema,updateUserSchema,getUserSchema } = require('../schemas/user.schema.js');
+const { createUserSchema, updateUserSchema, getUserSchema } = require('../schemas/user.schema.js');
 
 const service = new userService();
 
-
 router.get('/', async (req, res) => {
-
   const users = await service.find();
   res.json(users);
 });
@@ -37,7 +35,10 @@ async (req, res) => {
   res.status(201).json(newUser);
 });
 
-router.patch('/:id', async (req, res, next) => {
+
+router.patch('/:id',
+validatorHandler(updateUserSchema, 'params'),
+async (req, res, next) => {
   try {
     const { id } = req.params;
     const body   = req.body;

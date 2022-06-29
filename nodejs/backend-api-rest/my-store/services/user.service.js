@@ -17,16 +17,9 @@ class UserService {
 
   async findOne(id) {
     const user = await models.User.findByPk(id);
-    console.log(user);
     if( !user ) {
       throw boom.notFound('user not found')
     }
-    return user;
-  }
-
-  async delete(id) {
-    const user = this.findOne(id);
-    await user.destroy();
     return user;
   }
 
@@ -36,6 +29,11 @@ class UserService {
     return rta;
   }
 
+  async delete(id) {
+    const user = this.findOne(id);
+    await user.destroy();
+    return user;
+  }
 }
 
 module.exports = UserService;
