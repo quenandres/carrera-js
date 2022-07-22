@@ -20,5 +20,13 @@ npm install typescript -D
   //@ts-check
 ```
 ## 5/24 El compilador de TypeScript
+El navegador solo reconoce js no reconoce ts tampoco node.
+|Title|Description|
+|------|-------|
+|TS Code| (*.ts) (Classes, interface, Modules, Types).|
+|Compilation/ Transpiling|(tsc) (Target: ES3, ES5, ES6).|
+|Vanilla js|(*.js) Runs everywhere|
 
+---
 
+Se tienen archivos ts y el transpilador los convierte en codigo js.

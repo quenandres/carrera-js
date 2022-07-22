@@ -1,4 +1,3 @@
-//@ts-check
 (async ()=> {
   const myCart = [];
   const products = [];
@@ -33,6 +32,6 @@
     name: 'Nicolas',
     lastName: 'Molina'
   }
-  const rta = person.name +  limit;
+  const rta = person.name + limit;
   console.log(rta);
 });
