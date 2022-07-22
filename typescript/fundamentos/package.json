@@ -1,0 +1,15 @@
+{
+  "name": "fundamentos",
+  "version": "1.0.0",
+  "description": "\"Se pueden prevenir hasta un 15% de bugs en los proyectos por el analisis de codigo estatico.\"\r \"Typescript va a analizar el codigo contantemente, buscando fallas a la velocidad que el codigo sea escrito de forma instantanea.\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
