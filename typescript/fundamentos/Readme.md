@@ -9,5 +9,16 @@ Tambien se le conoce como compilador.
 Entre mas facil se encuentre el error mas rapido sera resolverlo.
 
 ## 3/24 Configurando nuestro proyecto
+Instalación local de ts
+```
+npm install typescript -D
+```
+
+
+## 4/24 Atrapando bugs
+```
+  //@ts-check
+```
+## 5/24 El compilador de TypeScript
 
 
