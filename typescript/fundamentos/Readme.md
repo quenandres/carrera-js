@@ -35,12 +35,27 @@ Se tienen archivos ts y el transpilador los convierte en codigo js.
 ## 6/24 Veamos el TSConfig.json
 
 Creación del ts config
-```
+```bash
 npx tsc --init
 ```
 
 Ejecución permanente del transpilador
-```
+```bash
 npx tsc --watch
+```
+
+## __7/24 Qué es el tipado en TypeScript__
+__JS__
+```Javascript
+const age = 20;
+```
+
+__TS__
+```Typescript
+const age: number = 20;
+```
+```Javascript
+const age = 20; //inferida
+const age: number = 20; // explicita
 ```
 
