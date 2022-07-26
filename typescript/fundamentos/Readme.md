@@ -151,7 +151,7 @@ Se pueden inferir o poner de manera explicita, existe un bloqueo de uso de varia
 
 ### __12/24 Arrays__
 
-```
+```typescript
 (() => {
   const prices: number[] = [1,2,2,1,2,121];
   prices.push(4);
@@ -168,10 +168,31 @@ Se pueden inferir o poner de manera explicita, existe un bloqueo de uso de varia
   mixed.push(true);
 
   // Agrega Object para que podamos registrar objetos en nuestro array
-  let mixedObj: (number | string | boolean | Object )[] = ['hola', true];
+  let mixedObj: ( number | string | boolean | Object )[] = ['hola', true];
   mixedObj.push({});
   mixedObj.push([]);
-
 })();
-
 ```
+
+
+### __13/24 Any__
+Abre la opción de no utilizar el typado en las variables en las que se defina de este tipo __any__ el cual es considerado como mala practica.
+```typescript
+(() => {
+  let myDynamicVar: any;
+  myDynamicVar = 100;
+  myDynamicVar = null;
+  myDynamicVar = {};
+  myDynamicVar = false;
+
+  myDynamicVar = 'Hola';
+  const rta = (myDynamicVar as string).toLowerCase();
+  console.log(rta);
+  
+  myDynamicVar = 1212;
+  // cast llamado genericos para cambiar el tipo de una variable asignandola a otra variable.
+  const rta2 = (<number>myDynamicVar);
+  console.log(rta2);
+})();
+```
+
