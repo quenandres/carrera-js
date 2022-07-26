@@ -62,3 +62,39 @@ const age: number = 20; // explicita
 ```
 
 Se pueden inferir o poner de manera explicita, existe un bloqueo de uso de variables por archivo, para esto en librerias se manejan los scopes por variables ya que no se puede definir el mismo nombre de varible en otro archivo.
+
+
+### __9/24 Numbers__
+```
+(() => {
+  let productPrice = 100;
+  productPrice = 12;
+  console.log('ProductPrice', productPrice);
+  
+  let customerAge: number = 28;
+  // customerAge = customerAge + '1'; // 281
+  customerAge = customerAge + 1; // 29  
+  console.log('customerAge', customerAge);
+  
+  let productInStock: number;
+  console.log('productInStock', productInStock);
+  if( productInStock > 10 ) {
+    console.log('Is greater');    
+  }
+
+  let discount = parseInt('w');
+  console.log('discount', discount);  
+  if( discount <= 200 ) {
+    console.log('Apply');    
+  } else {
+    console.log('Not Apply');
+  }
+
+  let hex = 0xfff;
+  console.log('hex', hex);
+  let bin = 0b010111;
+  console.log('bin', bin);
+
+  const byNumber: number = 10;
+})();
+```
