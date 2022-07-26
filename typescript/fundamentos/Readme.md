@@ -65,7 +65,7 @@ Se pueden inferir o poner de manera explicita, existe un bloqueo de uso de varia
 
 
 ### __9/24 Numbers__
-```
+```typescript
 (() => {
   let productPrice = 100;
   productPrice = 12;
@@ -101,7 +101,7 @@ Se pueden inferir o poner de manera explicita, existe un bloqueo de uso de varia
 
 ### __10/24 Booleans__
 
-```
+```typescript
 (() => {
   let isEnable = true;
   // isEnable = 'as';
@@ -118,4 +118,32 @@ Se pueden inferir o poner de manera explicita, existe un bloqueo de uso de varia
   isNew = random >= 0.5 ? true : false;
   console.log('isNew', isNew);
 })();
+```
+
+### __11/24 Strings__
+```typescript
+(() => {
+  let productTitle: string = 'My amazing product';
+  //productTitle = () => {return 'a';};
+  productTitle = 'Change product';
+  console.log('productTitle', productTitle);
+  
+  const productDescription = "I'm bla bla bla...";
+  console.log('productDescription', productDescription);
+
+  let productPrice = 100;
+  let isNew = true;
+
+  const summary = `
+    title: ${productTitle}
+    description: ${productDescription}
+    price: ${productPrice}
+    isNew: ${isNew}
+  `;
+
+  console.log(summary);
+
+  const myString: string = '';
+})();
+
 ```
