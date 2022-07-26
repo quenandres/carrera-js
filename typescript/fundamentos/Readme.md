@@ -98,3 +98,24 @@ Se pueden inferir o poner de manera explicita, existe un bloqueo de uso de varia
   const byNumber: number = 10;
 })();
 ```
+
+### __10/24 Booleans__
+
+```
+(() => {
+  let isEnable = true;
+  // isEnable = 'as';
+  // isEnable = eee;
+  isEnable = false;
+
+  let isNew: boolean = false;
+  console.log('isNew', isNew);
+  isNew = true;
+  console.log('isNew', isNew);
+  
+  const random = Math.random();
+  console.log('random', random);  
+  isNew = random >= 0.5 ? true : false;
+  console.log('isNew', isNew);
+})();
+```
