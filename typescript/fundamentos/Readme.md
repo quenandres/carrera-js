@@ -291,3 +291,22 @@ Se puede evitar usar __any__ usando tipos directos de los objetos
 ### __21/24 Módulos: import y export__
 
 Import y export y sus beneficios para ejecutar archivos por responsabilidades.
+
+```typescript
+type Sizes = 'S' | 'M' | 'L' | 'XL';
+type Product = {
+    title: string,
+    createdAt: Date,
+    stock: number,
+    size?: Sizes
+}
+
+export {
+    Sizes,
+    Product,
+}
+```
+
+### __22/24 Usando librerías que soportan TypeScript__
+- date-fns
+Uso de librerias con soporte de __TS__.
