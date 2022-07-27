@@ -238,7 +238,33 @@ Uso explicito de la respuesta de las funciones y tambien uso de void para funcio
 Justo despues de definir los parametros de entrada de la función, definimos el tipo de salida __void__
 ```typescript
 const printTotal = (prices: number[]): void => {
-    const rta = calcTotal(prices);
+  const rta = calcTotal(prices);
     console.log(`El total es: ${rta}`);    
   }
+```
+
+### __19/24 Objetos en funciones__
+Para trabajar con objetos en las funciones, bien se puede de esta manera:
+```typescript
+  const login = ({email, password}: {email:string, password: number}) => {
+    console.log(email, password);    
+  };
+
+  login({
+    email:'quenandres@gmail.com', 
+    password: 123333
+  });
+```
+>
+O de la siguiente:
+
+```typescript
+  const login = (data: {email:string, password: number}) => {
+    console.log(data.email, data.password);
+  };
+
+  login({
+    email:'quenandres@gmail.com', 
+    password: 123333
+  });
 ```
