@@ -208,3 +208,7 @@ Con esta condicional, typescript define que puede tratar esa variable según el 
 function greeting(myText: string | number) {
     if( typeof myText === 'string' ) {
 ```
+
+
+### __15/24 Alias y tipos literales__
+
