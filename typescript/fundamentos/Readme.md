@@ -211,4 +211,21 @@ function greeting(myText: string | number) {
 
 
 ### __15/24 Alias y tipos literales__
+Podemos definir nuestros propios tipos de datos:
+```typescript
+  type UserID = string | number | boolean;
+```
+```typescript
+  // Literal types
+  type Sizes = 'S' | 'M' | 'L' | 'XL';
+  let shirtSize: Sizes;
+  shirtSize = 'S';
+  shirtSize = 'M';
+  shirtSize = 'L';
+  // shirtSize = 'X'; Error
 
+El cual creara validaciones en el codigo que nos muestren los posibles errores que tenemos.
+```
+### __16/24 Null y Undefined__
+Optional chaining
+__?__ Indica que puede que el valor sea __null__ o __undefined__ este nos da la oportunidad de usar un if ternario o operador logico para validar procesos que se le deben hacer.
