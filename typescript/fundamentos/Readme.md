@@ -286,3 +286,8 @@ Se puede evitar usar __any__ usando tipos directos de los objetos
     products.push(data);
   }
 ```
+
+
+### __21/24 Módulos: import y export__
+
+Import y export y sus beneficios para ejecutar archivos por responsabilidades.
