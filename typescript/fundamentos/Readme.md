@@ -310,3 +310,12 @@ export {
 ### __22/24 Usando librerías que soportan TypeScript__
 - date-fns
 Uso de librerias con soporte de __TS__.
+
+
+### __23/24 Usando librerías que NO soportan TypeScript__
+- Lodash (No tiene soporte para TS)
+```bash
+npm i --save-dev @types/lodash
+```
+
+Para solucionar este inconveniente.
