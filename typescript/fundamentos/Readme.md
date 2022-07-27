@@ -196,3 +196,15 @@ Abre la opción de no utilizar el typado en las variables en las que se defina d
 })();
 ```
 
+
+### __14/24 Union Types__
+Podemos definir varios tipos de variables para no dejar completamente abierto con __any__ el tipo de la variable.
+```typescript
+  let userId: string | number;
+```
+
+Con esta condicional, typescript define que puede tratar esa variable según el tipo que de en la condicional.
+```typescript
+function greeting(myText: string | number) {
+    if( typeof myText === 'string' ) {
+```
