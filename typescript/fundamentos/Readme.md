@@ -268,3 +268,21 @@ O de la siguiente:
     password: 123333
   });
 ```
+
+### __20/24 Objetos como tipos__
+Se puede evitar usar __any__ usando tipos directos de los objetos
+
+```typescript
+  type Product = {
+    title: string,
+    createAt: Date,
+    stock: number,
+    size?: Sizes
+  }
+
+  const products: Product[] = [];
+
+  const addProduct = ( data: Product) => {
+    products.push(data);
+  }
+```
