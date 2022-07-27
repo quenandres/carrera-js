@@ -229,3 +229,6 @@ El cual creara validaciones en el codigo que nos muestren los posibles errores q
 ### __16/24 Null y Undefined__
 Optional chaining
 __?__ Indica que puede que el valor sea __null__ o __undefined__ este nos da la oportunidad de usar un if ternario o operador logico para validar procesos que se le deben hacer.
+
+### __17/24 Funciones__
+Optional chaining Para enviar parametros funcionales tambien.
