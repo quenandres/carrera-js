@@ -232,3 +232,13 @@ __?__ Indica que puede que el valor sea __null__ o __undefined__ este nos da la 
 
 ### __17/24 Funciones__
 Optional chaining Para enviar parametros funcionales tambien.
+
+### __18/24 Retorno de funciones__
+Uso explicito de la respuesta de las funciones y tambien uso de void para funciones que no retornan nada.
+Justo despues de definir los parametros de entrada de la función, definimos el tipo de salida __void__
+```typescript
+const printTotal = (prices: number[]): void => {
+    const rta = calcTotal(prices);
+    console.log(`El total es: ${rta}`);    
+  }
+```
