@@ -17,6 +17,22 @@ class MyDate {
 
 Por buena practica ts nos pide inicializar los atributos de la clase. Bien sea en la definicion o en el contructor.
 
+**Definicion**
+```typescript
+class Test {
+    num1: number = 1;
+}
+```
+**Constructor**
+```typescript
+class Test {
+    constructor(num1: number) {
+        this.num1 = num1;
+    };
+}
+```
+
+
 ```typescript
 constructor(year: number, month: number, day: number) {
     this.year = year;
