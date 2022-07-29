@@ -1,0 +1,17 @@
+{
+  "name": "patrones",
+  "version": "1.0.0",
+  "description": ">Incrementan la reutilización de codigo y la flexibilidad por los mecanismos de creación de objetos.\r ## Patrones estructurales\r >Explican como ensamblar objetos y clases en estructuras más grandes a la vez que se mantiene la flexibilidad y eficiencia de la estructura.\r ## Patrones de comportamiento\r >Explican la comunicación efectiva y asignación de responsabilidades entre objetos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.6.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  }
+}

@@ -8,7 +8,7 @@
 # Patrones creacionales
   ## Singleton
   Permite asegurarnos de que una clase tenga una única instancia, a la vez que proporciona un punto de acceso global a dicha instancia.
-  <img src="./images/singleton.jpeg" style="width:360px;height:360px">
+  <img src="./images/singleton.jpeg" style="width:260px;height:260px">
   
   >
 
