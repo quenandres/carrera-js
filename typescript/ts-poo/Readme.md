@@ -3,11 +3,11 @@
 - npx tsc --init: Inicializacion de typescript
 
 
-### Class 2/25
-Vienen implementadas desde el es6
+### __Class 2/25__
+Las clases vienen implementadas desde el es6
 Nos sirven para crear instancias de objetos.
 
-```
+```typescript
 class MyDate {
     year: number = 0;
     month: number = 0;
@@ -17,7 +17,7 @@ class MyDate {
 
 Por buena practica ts nos pide inicializar los atributos de la clase. Bien sea en la definicion o en el contructor.
 
-```
+```typescript
 constructor(year: number, month: number, day: number) {
     this.year = year;
     this.month = month;
