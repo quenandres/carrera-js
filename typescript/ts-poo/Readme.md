@@ -111,6 +111,26 @@ constructor(
 ### Getters 7/25
 El getter funciona como una propiedad, con un metodo.
 Debe de retornar algo como si fuese una propiedad.
+Para usar la propiedad __get__ 
+```ts
+class Test {
+    constructor(
+        public num1: number
+    ){};
+}
+get num1() {
+    return this._num1;
+}
+
+const test = new Test();
+❌test.num1 = 1 // No se puede modificar por que es una propiedad de solo lectura
+```
+El underscore que se le pone a la propiedad privada, es para que no presente problemas con el get del mismo nombre, se debe cambiar el nombre de la propiedad y agregar el _ en los lugares donde esta ubicado en la clase.
+
+Con get podemos obtener los datos de alcance privados sin la posibilidad de cambiarlos, se puede acceder como si fuese una propiedad, todos los getter deberian de devolver algo.
+
+
+
 
 ### Setters 8/25
 A diferencia de Getter no se debe retornar nada.
