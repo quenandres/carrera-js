@@ -133,9 +133,9 @@ Con get podemos obtener los datos de alcance privados sin la posibilidad de camb
 
 
 ### Setters 8/25
-A diferencia de Getter no se debe retornar nada.
+A diferencia de Getter no se debe retornar nada por lo tanto el setter debe ser void.
 Tambien funciona como una propiedad.
-```
+```ts
 set month(newValue: number) {
     if( newValue >= 1 && newValue <=12 ) {
         this._month = newValue;
@@ -153,6 +153,8 @@ console.log(myDate.month);
 myDate.month = 78;
 console.log('Esto no debe aparecer', myDate.month);
 ```
+
+Es mas usado para validar valores asignados en los procesos de cambio de valores como por ejemplo, validar que el mes no sea menor a 1 ni mayor a 12.
 
 ### Herencia 9/25
 Es una forma de extender metodos y atributos de una clase a otra.
