@@ -80,6 +80,34 @@ private addPadding(value: number) {
 Es el metodo con el cual se inicializa la instancia y se inicializan los atributos.
 Para poder ejecutar funcionamiento con atributos acortados se debe poner explicito el acceso de la variable.
 
+⭕ Larga
+```ts
+class Test {    
+    constructor(num1: number) {
+        this.num1 = num1;
+    };
+}
+```
+🟢 Corta, se definen y se asignan
+```ts
+class Test {
+    constructor(
+        public num1: number
+    ){};
+}
+```
+
+❌Si no se define el private o public en la variable, no contara como un propiedad de toda la clase, unicamente se podra acceder en el constructor.
+```ts
+constructor(
+    public year: number = 1994, 
+    public month: number = 12, 
+    day: number = 10
+) {}
+```
+
+
+
 ### Getters 7/25
 El getter funciona como una propiedad, con un metodo.
 Debe de retornar algo como si fuese una propiedad.
