@@ -38,6 +38,25 @@ Podemos acceder a los metodos como a los atributos de la clase.
 
 ### Acceso público 4/25
 Por defecto todo en ts que no tenga explicito que tipo de acceso tiene, se crea como publica.
+Esto indica que podemos acceder a las propiedades y metodos del objeto desde el exterior.
+```typescript
+public year: number;
+```
+
+#### Desventajas del alcance público
+La desventaja que tenemos al tener una propiedad o método con alcance público es que estás pueden ser modificables desde fuera de la clase.
+```typescript
+const myDate = new MyDate(1994,12,10);
+console.log(myDate.printFormat());
+myDate.day = 17;
+console.log(myDate.printFormat());
+```
+>
+```bash
+10/12/1994
+17/12/1994
+```
+
 
 ### Acceso privado 5/25
 Sirve para proteger metodos y propiedades que no queremos que se accedan de manera externa.

@@ -1,6 +1,6 @@
 
 // 2 Tipos de inicialización
-class MyDate {
+export class MyDate {
     year: number;
     month: number;
     day: number;
