@@ -60,6 +60,21 @@ console.log(myDate.printFormat());
 
 ### Acceso privado 5/25
 Sirve para proteger metodos y propiedades que no queremos que se accedan de manera externa.
+```ts
+private day: number;
+```
+Con la propiedad private no se podra acceder a esta propiedad desde fuera de la clase donde sea definida.
+
+Se vuelve privado el metodo que agrega un 0 si el mes o el dia es menor a 10 ya que no es logico que otros metodos accedan a ese metodo para obtener esa funcionalidad.
+```ts
+private addPadding(value: number) {
+    if( value < 10 ) {
+        return `0${value}`;
+    } 
+    return `${value}`;
+}
+```
+
 
 ### Constructor 6/25
 Es el metodo con el cual se inicializa la instancia y se inicializan los atributos.
