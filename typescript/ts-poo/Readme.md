@@ -158,6 +158,35 @@ Es mas usado para validar valores asignados en los procesos de cambio de valores
 
 ### Herencia 9/25
 Es una forma de extender metodos y atributos de una clase a otra.
+```ts
+export class Animal {
+    constructor(public name: string) {}
+    move() {
+        console.log('Moving along...');        
+    }
+}
+
+export class Dog extends Animal {
+    woof(times: number):void {
+        for (let index = 0; index < times; index++) {
+            console.log('woof..');
+        }
+    }
+}
+```
+La clase Dog obtendra los atributos y metodos de la clase __Animal__ y podra usarlas a su manera tambien podra implementar nueva funcionalidad.
+
+```ts
+export class Dog extends Animal {
+
+    constructor(
+        name: string, // Se obtiene la propiedad de la clase padre y debe ir sin expecificación de alcance
+        public owner: string
+    ){
+        super(name);
+    }
+}
+```
 el metodo super() llama al constructor de la clase padre.
 
 ### Acceso protegido 10/25
