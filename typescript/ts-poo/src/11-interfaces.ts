@@ -7,11 +7,11 @@ interface Driver {
     isConnected(name: string): boolean;
 }
 
-const Driver: Driver = {
+/* const Driver: Driver = {
     database: '',
     password: '',
     port: 2,
-};
+}; */
 
 class PostgresDriver implements Driver {
     constructor(

@@ -58,7 +58,7 @@ console.log(myDate.printFormat());
 ```
 
 
-### Acceso privado 5/25
+### __Acceso privado 5/25__
 Sirve para proteger metodos y propiedades que no queremos que se accedan de manera externa.
 ```ts
 private day: number;
@@ -76,7 +76,7 @@ private addPadding(value: number) {
 ```
 
 
-### Constructor 6/25
+### __Constructor 6/25__
 Es el metodo con el cual se inicializa la instancia y se inicializan los atributos.
 Para poder ejecutar funcionamiento con atributos acortados se debe poner explicito el acceso de la variable.
 
@@ -108,7 +108,7 @@ constructor(
 
 
 
-### Getters 7/25
+### __Getters 7/25__
 El getter funciona como una propiedad, con un metodo.
 Debe de retornar algo como si fuese una propiedad.
 Para usar la propiedad __get__ 
@@ -132,7 +132,7 @@ Con get podemos obtener los datos de alcance privados sin la posibilidad de camb
 
 
 
-### Setters 8/25
+### __Setters 8/25__
 A diferencia de Getter no se debe retornar nada por lo tanto el setter debe ser void.
 Tambien funciona como una propiedad.
 ```ts
@@ -156,7 +156,7 @@ console.log('Esto no debe aparecer', myDate.month);
 
 Es mas usado para validar valores asignados en los procesos de cambio de valores como por ejemplo, validar que el mes no sea menor a 1 ni mayor a 12.
 
-### Herencia 9/25
+### __Herencia 9/25__
 Es una forma de extender metodos y atributos de una clase a otra.
 ```ts
 export class Animal {
@@ -189,7 +189,7 @@ export class Dog extends Animal {
 ```
 el metodo super() llama al constructor de la clase padre.
 
-### Acceso protegido 10/25
+### __Acceso protegido 10/25__
 protected a diferencia de private, permite heredar propiedades de una clase padre a sus clases hijas. No se dejan modificar estas propiedades protegidas.
 Se puede crear metodos con el mismo nombre del padre, si se necesita llamar el metodo del padre se usa super.<class>() para que realice el mismo funcionamiento del padre.
 
@@ -249,7 +249,7 @@ dooo
 
 Lo que hizo el profe con el método move() es polimorfismo, es reescribir el método que adopta otro comportamiento en la clase hija, pero en este caso este otro comportamiento es un agregado de funcionalidad adicional antes de su ejecucíon por eso al final llama al move() del padre con super()
 
-### Static 11/25
+### __Static 11/25__
 Los estaticos sirven tanto en propiedades como en metodos, que nos permiten utilizarlas sin definir un objeto.
 
 ```ts
@@ -264,7 +264,7 @@ console.log('MyMath', MyMath.PI);
 ```
 
 
-### Interfaces 12/25
+### __Interfaces 12/25__
 Son similares a la herencia pero mas que extender es un contrato para todas las clases que lo implementen.
 Todo lo que va en la interface es publico, y todas las clases lo deben implementar.
 ```ts
@@ -286,19 +286,25 @@ class name_class implements name {
 
 Una forma de verlo es como una forma de tipar clases, asi como tipamos los atributos, tipamos las clases para saber que reglas debemos cumplir.
 
-### Clases abstractas 13/25
+### __Clases abstractas 13/25__
 Cada vez que implementamos una clase abstracta, no podemos crear instancias de esa clase, si no solo de las clases hijas.
 Se usan mas que todo para restringir funcionamiento del padre.
 
+```ts
+abstract class Pet {} // no instancias de esta clase
 
-### Singleton: constructor privado 14/25
+class Dog extends Pet {} // de esta si podemos
+```
+No podremos instanciar un objeto directamente desde **Pet**, Si quisieramos instanciar un **Pet** tendriamos que instancia una clase que no sea __abstracta__ En este caso **Dog**
+
+### __Singleton: constructor privado 14/25__
 Singleton nos garantiza que solamente tendremos una instancia de un objeto, previniendo bloqueos de memoria.
 Definimos el constructor como privado y antes de eso, creamos una instancia donde la declaramos igual a la clase o null, aunque instanciemos varias veces las clase siempre se vera reflejada la primer instancia.
 
-### Promesas 15/25
+### __Promesas 15/25__
 Es util definir que clase de datos nos devolvera la promesa, axios tiene implementado en su API una especie de async/await para que no sea necesario ponerla cuando lo usamos.
 
-### Tipando respuestas HTTP 16/25
+### __Tipando respuestas HTTP 16/25__
 El tipado de datos es muy importante, desde el retorno, desde el cast y desde una forma a la fuerza de hacer.
 
 - 1
@@ -320,19 +326,19 @@ async function getProducts(): Promise<Product[]> {
 data = data as Product[]
 ```
 
-### Proyecto: migración de funciones a clases 17/25
+### __Proyecto: migración de funciones a clases 17/25__
 Se migran las funciones a una clase, se hace un ejemplo de Principio de responsabilidad.
 
-### Consumiendo ProductMemoryService 18/25
+### __Consumiendo ProductMemoryService 18/25__
 Consumimos datos en memoria.
 
-### ProductHttpService 19/25
+### __ProductHttpService 19/25__
 Se crea un servicio completo arrancando desde el modelo(interfase) y especificando entrega de datos.
 
-### Consumiendo ProductHttpService 20/25
+### __Consumiendo ProductHttpService 20/25__
 Se consume la API y se maneja el asincronismo y el manejo de errores.
 
-### Generics 21/25
+### __Generics 21/25__
 Le podemos enviar un tipado dinamico a ts T.
 
 ```
@@ -346,11 +352,11 @@ getValue<string>('12').toString();
 getValue<string[]>([]).forEach;
 ```
 
-### Generics en clases 22/25
+### __Generics en clases 22/25__
 En una clase tambien se pueden enviar los tipos dinamicos.
 Se ponen en uso los genericos, para que se puedan usar un http services generico para todos los servicios.
 
-### Generics en métodos 23/25
+### __Generics en métodos 23/25__
 Se puede definir un tipado diferente en la clase y otro en el metodo.
 
 ```
@@ -365,7 +371,7 @@ No definir nombres iguales por choque de tipado.
 
 Implementamos la herencia para extender el funcionamiento de un servicio basado en el servicio base.
 
-### Decoradores 24/25
+### __Decoradores 24/25__
 Los decoradores son identificados con un ```@```
 Agrega validaciones o comportamientos extra, como por ejemplo validar la expresion regular de un email haciendo uso de:
 ```
