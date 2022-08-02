@@ -267,15 +267,24 @@ console.log('MyMath', MyMath.PI);
 ### Interfaces 12/25
 Son similares a la herencia pero mas que extender es un contrato para todas las clases que lo implementen.
 Todo lo que va en la interface es publico, y todas las clases lo deben implementar.
-```
+```ts
 interface name {
-
+    name: string;
+    test(): boolean;
 }
 
 class name_class implements name {
+    constructor(
+        public name: string
+    ){}
 
+    test():boolean {
+        return true;
+    }
 }
 ```
+
+Una forma de verlo es como una forma de tipar clases, asi como tipamos los atributos, tipamos las clases para saber que reglas debemos cumplir.
 
 ### Clases abstractas 13/25
 Cada vez que implementamos una clase abstracta, no podemos crear instancias de esa clase, si no solo de las clases hijas.
