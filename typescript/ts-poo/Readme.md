@@ -252,6 +252,18 @@ Lo que hizo el profe con el método move() es polimorfismo, es reescribir el mé
 ### Static 11/25
 Los estaticos sirven tanto en propiedades como en metodos, que nos permiten utilizarlas sin definir un objeto.
 
+```ts
+export class MyMath {
+    static readonly PI = 3.14;
+    static max(...numbers: number[]) { // ...numbers -> cualquier parametro lo convierte en array
+        return numbers.reduce((max, item) => max >= item ? max : item);
+    }
+}
+
+console.log('MyMath', MyMath.PI);
+```
+
+
 ### Interfaces 12/25
 Son similares a la herencia pero mas que extender es un contrato para todas las clases que lo implementen.
 Todo lo que va en la interface es publico, y todas las clases lo deben implementar.
