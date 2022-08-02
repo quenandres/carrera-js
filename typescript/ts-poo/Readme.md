@@ -183,15 +183,71 @@ export class Dog extends Animal {
         name: string, // Se obtiene la propiedad de la clase padre y debe ir sin expecificación de alcance
         public owner: string
     ){
-        super(name);
+        super(name); // Llamamos al constructor del padre
     }
 }
 ```
 el metodo super() llama al constructor de la clase padre.
 
 ### Acceso protegido 10/25
-protected a diferencia de private, permite heredar propiedades de una clase padre a sus clases hijas
+protected a diferencia de private, permite heredar propiedades de una clase padre a sus clases hijas. No se dejan modificar estas propiedades protegidas.
 Se puede crear metodos con el mismo nombre del padre, si se necesita llamar el metodo del padre se usa super.<class>() para que realice el mismo funcionamiento del padre.
+
+```ts
+export class Animal {
+    constructor(protected name: string) {}
+
+    move() {
+        console.log('Moving along...');        
+    }
+
+    protected doSomething() {
+        console.log('dooo');        
+    }
+}
+```
+---
+```ts
+export class Dog extends Animal {
+
+    constructor(
+        name: string, // Se obtiene la propiedad de la clase padre y debe ir sin expecificación de alcance
+        public owner: string
+    ){
+        super(name); // Llamamos al constructor de padre
+    }
+
+    woof(times: number):void {
+        for (let index = 0; index < times; index++) {
+            console.log(`woof.. ${this.name}`);
+        }
+        this.doSomething();
+    }
+
+    move() {
+        console.log('Moving as a dog...');
+        super.move();
+    }
+}
+const chaise = new Dog('chaise', 'Albert');
+chaise.move();
+console.log(chaise.greeting());
+console.log(chaise.owner);
+//chaise.name = 'Darius';
+chaise.woof(2);
+```
+---
+```bash
+Moving as a dog... # metodo move de la clase Dog
+Moving along...    # metodo move del padre
+Hello, I'm chaise
+Albert
+woof.. chaise
+woof.. chaise
+dooo
+```
+
+Lo que hizo el profe con el método move() es polimorfismo, es reescribir el método que adopta otro comportamiento en la clase hija, pero en este caso este otro comportamiento es un agregado de funcionalidad adicional antes de su ejecucíon por eso al final llama al move() del padre con super()
 
 ### Static 11/25
 Los estaticos sirven tanto en propiedades como en metodos, que nos permiten utilizarlas sin definir un objeto.
