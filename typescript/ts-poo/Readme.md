@@ -287,6 +287,9 @@ class name_class implements name {
 Una forma de verlo es como una forma de tipar clases, asi como tipamos los atributos, tipamos las clases para saber que reglas debemos cumplir.
 
 ### __Clases abstractas 13/25__
+
+Las clases abstractas son tan ‘genericas’ que no tiene sentido que sean instanciadas. Usamos la keyword abstract.
+
 Cada vez que implementamos una clase abstracta, no podemos crear instancias de esa clase, si no solo de las clases hijas.
 Se usan mas que todo para restringir funcionamiento del padre.
 
@@ -298,8 +301,52 @@ class Dog extends Pet {} // de esta si podemos
 No podremos instanciar un objeto directamente desde **Pet**, Si quisieramos instanciar un **Pet** tendriamos que instancia una clase que no sea __abstracta__ En este caso **Dog**
 
 ### __Singleton: constructor privado 14/25__
+Uso de constructores privados, usado para usar el patron singleton, en el que creamos una unica instancia de un objeto y asegurando que tendremos un unico acceso a esta clase.
+
 Singleton nos garantiza que solamente tendremos una instancia de un objeto, previniendo bloqueos de memoria.
 Definimos el constructor como privado y antes de eso, creamos una instancia donde la declaramos igual a la clase o null, aunque instanciemos varias veces las clase siempre se vera reflejada la primer instancia.
+
+```ts
+export class MyService {
+
+    static instance: MyService | null = null;
+
+    private constructor(
+        private name: string
+    ){}
+
+    getName() {
+        return this.name;
+    }
+
+    static create(name: string) {
+        if(MyService.instance === null) {
+            console.log('deberia entrar una vez !!');
+            MyService.instance = new MyService(name);
+        }
+        return MyService.instance;
+    }
+}
+
+const myService1 = MyService.create('service 1');
+console.log(myService1);
+
+const myService2 = MyService.create('service 2');
+console.log(myService2);
+
+console.log(myService1 === myService2);
+```
+---
+__*console*__
+```bash
+deberia entrar una vez !!
+MyService { name: 'service 1' }
+MyService { name: 'service 1' }
+MyService { name: 'service 1' }
+true
+```
+
+
 
 ### __Promesas 15/25__
 Es util definir que clase de datos nos devolvera la promesa, axios tiene implementado en su API una especie de async/await para que no sea necesario ponerla cuando lo usamos.
