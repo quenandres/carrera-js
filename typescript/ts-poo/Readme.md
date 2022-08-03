@@ -358,22 +358,23 @@ const promise = new Promise<boolean>((resolve) => {
 ### __Tipando respuestas HTTP 16/25__
 El tipado de datos es muy importante, desde el retorno, desde el cast y desde una forma a la fuerza de hacer.
 
-- 1
-```
+La primera nos funciona para tipar la respuesta hacia afuera de la funcion.
+```ts
 async function getProducts(): Promise<Product[]> {
     const { data } = await axios.get('https://api.escuelajs.co/api/v1/products');
     return data;
 }
 ```
-- 2
-```
+
+La segunda, nos permite forzar el tipo para el data.
+```ts
 async function getProducts(): Promise<Product[]> {
     const { data } = await axios.get<Product[]>('https://api.escuelajs.co/api/v1/products');
     return data;
 }
 ```
-- 3
-```
+La tercera nos permite convertir el data en la estructura que necesitamos
+```ts
 data = data as Product[]
 ```
 
