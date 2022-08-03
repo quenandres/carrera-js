@@ -346,10 +346,14 @@ MyService { name: 'service 1' }
 true
 ```
 
-
-
 ### __Promesas 15/25__
 Es util definir que clase de datos nos devolvera la promesa, axios tiene implementado en su API una especie de async/await para que no sea necesario ponerla cuando lo usamos.
+Forma de tipa una promesa Promise< boolean> .
+```ts
+const promise = new Promise<boolean>((resolve) => {
+    resolve(true)
+});
+```
 
 ### __Tipando respuestas HTTP 16/25__
 El tipado de datos es muy importante, desde el retorno, desde el cast y desde una forma a la fuerza de hacer.
