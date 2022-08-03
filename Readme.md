@@ -435,3 +435,7 @@ https://www.youtube.com/watch?v=m7AgxJSCMVw&t=12s&ab_channel=jonmircha
 
 Js es un lenguaje Single Thread(Un unico hilo).
 ### Procesamiento Single Thread y Multi Thread
+
+
+# Interes
+https://app.quicktype.io/
