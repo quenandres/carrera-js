@@ -1,0 +1,17 @@
+.ItemCharacter {
+    float:left;
+}
+
+.characterImage {
+    width:80%;
+    height: auto;
+}
+
+.characterImage:hover {
+    cursor:pointer;
+}
+
+.info{
+    width: 50%;
+    float: left;
+}

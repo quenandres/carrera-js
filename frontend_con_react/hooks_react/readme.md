@@ -28,3 +28,19 @@ export const Header = () => {
   );
 }
 ```
+
+## __4/45 useEffect: olvida el ciclo de vida, ahora piensa en efectos__
+El efecto se ejecuta segun el parametro que pongamos
+```js
+useEffect(() => {    
+    
+}, []);
+```
+Cada vez que este parametro cambie [], se ejecutara nuevamente el effect.
+Si esta el array vacio, simplemente se ejecutara una vez.
+## __ __
+## __ __
+## __ __
+## __ __
+## __ __
+## __ __
