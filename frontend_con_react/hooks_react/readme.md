@@ -38,7 +38,9 @@ useEffect(() => {
 ```
 Cada vez que este parametro cambie [], se ejecutara nuevamente el effect.
 Si esta el array vacio, simplemente se ejecutara una vez.
-## __ __
+## __5/45 useContext: la fusión de React Hooks y React Context__
+Resuelve el problema de pasar la información entre componentes, desliga la jerarquia de padre e hijo.
+
 ## __ __
 ## __ __
 ## __ __

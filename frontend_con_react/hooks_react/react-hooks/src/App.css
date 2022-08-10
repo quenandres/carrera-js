@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.darkMode {
+  background-color: black;
+  color: white;
+}
+
+.ligthMode {
+  background-color: white;
+  color: black;
+}

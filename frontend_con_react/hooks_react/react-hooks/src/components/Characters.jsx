@@ -10,7 +10,7 @@ export const Characters = () => {
       .then(response => response.json())
       .then(data => setCharacters(data.results));
       console.log(characters);
-    }, [])
+    }, []);
     
 
   return (

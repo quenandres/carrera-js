@@ -1,5 +1,6 @@
 .ItemCharacter {
     float:left;
+    background-color: transparent;
 }
 
 .characterImage {
