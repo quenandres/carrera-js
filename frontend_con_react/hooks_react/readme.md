@@ -72,6 +72,11 @@ return (
 )
 ```
 
+## __8/45 useMemo: evita cálculos innecesarios en componentes__
+useMemo nos permitirá usar la memoización de forma simple
+
+## __ __
+## __ __
 ## __ __
 ## __ __
 ## __ __

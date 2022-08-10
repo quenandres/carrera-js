@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useReducer} from 'react';
+import React, {useState, useEffect, useReducer, useMemo} from 'react';
 import { ItemCharacter } from './ItemCharacter';
 import '../assets/css/Characters.css';
 
@@ -7,7 +7,6 @@ export const Characters = () => {
     const initialState = {
       favorites: []
     }
-
     const favoriteReducer = (state, action) => {
       switch(action.type) {
         case 'ADD_TO_FAVORITE':
@@ -17,13 +16,17 @@ export const Characters = () => {
               favorites: [...state.favorites, action.payload]
             };
           }
-        default:
+          break;
+        default:          
           return state;
       }
     }
     
     const [ characters, setCharacters ] = useState([]);
     const [ favorites, dispatch] = useReducer(favoriteReducer, initialState);
+    const [ search, setSearch ] = useState('');
+    
+    
 
     const handleClick = favorite => {
       dispatch({type: 'ADD_TO_FAVORITE', payload: favorite});
@@ -35,7 +38,21 @@ export const Characters = () => {
       .then(data => setCharacters(data.results));
       console.log(characters);
     }, []);
+
+    const handleSearch = (event) => {
+      setSearch(event.target.value);
+    }
     
+    /* const filteredUsers = characters.filter((character) => {
+      return character.name.toLowerCase().includes(search.toLocaleLowerCase());
+    }); */
+
+  const filteredUsers = useMemo(() => 
+    characters.filter((character) => {
+      return character.name.toLowerCase().includes(search.toLocaleLowerCase());
+    }),
+    [characters, search]
+  );
 
   return (
     <div>
@@ -45,8 +62,11 @@ export const Characters = () => {
         </div>
       ))}
       <br />
+      <div className="Search">
+        <input type='text' value={search} onChange={handleSearch} />
+      </div>
 
-        {characters.map(character => (
+        {filteredUsers.map(character => (
             <>
               <h2>{character.name}</h2>
               {/* <ItemCharacter character={character}/> */}
