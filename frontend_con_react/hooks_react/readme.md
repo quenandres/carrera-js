@@ -41,7 +41,37 @@ Si esta el array vacio, simplemente se ejecutara una vez.
 ## __5/45 useContext: la fusión de React Hooks y React Context__
 Resuelve el problema de pasar la información entre componentes, desliga la jerarquia de padre e hijo.
 
-## __ __
+## __6/45 useReducer: como useState, pero más escalable__
+```js
+import React, {useState, useEffect, useReducer} from 'react';
+
+const initialState = {
+    favorites: []
+}
+
+const favoriteReducer = (state, action) => {
+    switch(action.type) {
+    case 'ADD_TO_FAVORITE':
+        return {
+        ...state,
+        favorites: [...state.favorites, action.payload]
+        };
+    default:
+        return state;
+    }
+}
+
+const [ favorites, dispatch] = useReducer(favoriteReducer, initialState);
+
+const handleClick = favorite => {
+    dispatch({type: 'ADD_TO_FAVORITE', payload: favorite});
+}
+
+return (
+    <button type='button' onClick={() => handleClick(character)}>Favorito</button>
+)
+```
+
 ## __ __
 ## __ __
 ## __ __
