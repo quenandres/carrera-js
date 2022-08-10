@@ -75,7 +75,20 @@ return (
 ## __8/45 useMemo: evita cálculos innecesarios en componentes__
 useMemo nos permitirá usar la memoización de forma simple
 
-## __ __
+## __9/45 useRef: manejo profesional de inputs y formularios__
+```js
+import React, {useState, useEffect, useReducer, useMemo, useRef} from 'react';
+
+const searchInput = useRef(null);
+
+const handleSearch = () => {
+    setSearch(searchInput.current.value);
+}
+
+<div className="Search">
+    <input type='text' value={search} ref={searchInput} onChange={handleSearch} />
+</div>
+```
 ## __ __
 ## __ __
 ## __ __
