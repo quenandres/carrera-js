@@ -40,3 +40,20 @@ bg-white /* Indicando que va a tener fondo blanco */
 rounded-lg /* indicando que tendra bordes redondeados */
 ```
 Estos busca quitar la responsabilidad del equipo en crear los nombre de las clases mas referenciados.
+
+## _6/29 Colores_
+Los elementos que pueden ser afectados por el color son:
+- Fondo
+- Texto
+- Border
+- Placeholder
+
+```css
+#Fondo
+bg-
+#Text
+text-
+#Border
+border-
+border-blue-
+```
