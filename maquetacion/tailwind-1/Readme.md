@@ -17,3 +17,10 @@ Genera codigo de utilerias
 ```css
 @tailwind utilities;
 ```
+
+
+## _4/29 Personalización y configuración_
+
+Se pueden hacer dos cosas con el archivo de configuración de Tailwind, que son :
+- Reemplazar la configuración por defecto
+- Aumentar la funcionalidad agregando 'elementos' extras

@@ -2,7 +2,15 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ['Graphik', 'sans-serif'],
+      serif: ['Merriweather', 'serif'],
+    },
+    extend: {
+      colors: {
+        cyan: '#9cdbff'
+      }
+    },
   },
   plugins: [],
 }
