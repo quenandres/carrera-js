@@ -89,7 +89,9 @@ const handleSearch = () => {
     <input type='text' value={search} ref={searchInput} onChange={handleSearch} />
 </div>
 ```
-## __ __
+## __10/45 useCallback: evita cálculos innecesarios en funciones__
+
+
 ## __ __
 ## __ __
 ## __ __
