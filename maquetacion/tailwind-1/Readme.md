@@ -24,3 +24,19 @@ Genera codigo de utilerias
 Se pueden hacer dos cosas con el archivo de configuración de Tailwind, que son :
 - Reemplazar la configuración por defecto
 - Aumentar la funcionalidad agregando 'elementos' extras
+
+## _5/29 Responsive Design, Mobile First y Utility First_
+
+*Responsive Design*
+Es la forma en la que se trata de resolver de que un sitio se vea bien en cualquier dispositivo.
+
+*Mobile First*
+Centramos el desarrollo primero para los dispositivos moviles.
+
+*Utility First*
+Es la forma en la que se nombran las clases en css
+```css
+bg-white /* Indicando que va a tener fondo blanco */
+rounded-lg /* indicando que tendra bordes redondeados */
+```
+Estos busca quitar la responsabilidad del equipo en crear los nombre de las clases mas referenciados.
